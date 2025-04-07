@@ -12,20 +12,39 @@ export const Sidebar = () => {
         </p>
       </div>
 
-      <nav className='space-y-2'>
+      <nav className='space-y-1'>
+        <p className='font-medium'>Projects</p>
+        <a href='/project/2025-mokuhanga' className='block hover:underline'>
+          2025 Mokuhanga
+        </a>
+        <a href='/project/2024-cafe-series' className='block hover:underline'>
+          2024 Cafe series
+        </a>
+        <a href='/project/2024-animal-world' className='block hover:underline'>
+          2024 Animal world
+        </a>
+        <a
+          href='/project/2024-surprise-encounter'
+          className='block hover:underline'
+        >
+          2024 Surprise encounter
+        </a>
+        <div className='bg-gray-600 w-full h-px my-2'></div>
         <a href='/about' className='block hover:underline'>
           About
         </a>
-        <a href='#' className='block hover:underline'>
-          Shop
-        </a>
-        <a href='#' className='block hover:underline'>
+        <a
+          href='https://www.instagram.com/sranso'
+          target='_blank'
+          className='block hover:underline'
+        >
           Instagram
         </a>
-        <a href='#' className='block hover:underline'>
-          Newsletter
-        </a>
-        <a href='#' className='block hover:underline'>
+        <a
+          href='mailto:sranso@gmail.com'
+          target='_blank'
+          className='block hover:underline'
+        >
           Contact
         </a>
       </nav>

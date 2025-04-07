@@ -17,8 +17,8 @@ const data: Record<
 };
 
 export function Artwork() {
-  const { name } = useParams<{ name: string }>();
-  const project = data[name || ''];
+  const { artwork } = useParams<{ artwork: string }>();
+  const project = data[artwork || ''];
 
   if (!project) return <div>Project not found.</div>;
 
