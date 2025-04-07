@@ -1,13 +1,14 @@
 import { StrictMode } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
-import './index.css';
+import { App } from './App.tsx';
 import { Sidebar } from './components/Sidebar.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Sidebar />
-    <main className='flex-1 p-6 md:ml-64'>
-      <p>hi</p>
-    </main>
+    <BrowserRouter>
+      <Sidebar />
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
