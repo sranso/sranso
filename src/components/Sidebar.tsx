@@ -13,8 +13,8 @@ export const Sidebar = () => {
       </div>
 
       <nav className='space-y-2'>
-        <a href='#' className='block hover:underline'>
-          Info
+        <a href='/about' className='block hover:underline'>
+          About
         </a>
         <a href='#' className='block hover:underline'>
           Shop
