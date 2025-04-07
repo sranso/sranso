@@ -2,10 +2,13 @@ export const Sidebar = () => {
   return (
     <aside className='w-full md:w-64 p-6 md:fixed md:h-screen md:border-r border-gray-300 text-sm leading-relaxed'>
       <div className='mb-8'>
+        <a href='/' className='logo font-bold'>
+          Sarah Ransohoff
+        </a>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-          ultricies sed, dolor.
+          Drawings, paintings, illustrations, & things that make me smile or
+          laugh or feel strongly.
         </p>
       </div>
 
