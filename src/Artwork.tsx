@@ -16,7 +16,7 @@ const data: Record<
   },
 };
 
-export function ProjectPage() {
+export function Artwork() {
   const { name } = useParams<{ name: string }>();
   const project = data[name || ''];
 
