@@ -5,10 +5,24 @@ export const enum ProjectNamesEnum {
   SURPRISE_ENCOUNTER = '2024-surprise-encounter',
 }
 
+/**
+ * Making a fake DB here. A project has many artworks.
+ */
 export type Project = {
   title: string;
   image: string;
   description: string;
+};
+export type Artwork = {
+  available?: boolean;
+  date: string;
+  description: string;
+  dimensions: string;
+  image: string;
+  medium: string;
+  notes?: string;
+  path: string;
+  title: string;
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
@@ -32,4 +46,59 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     image: '/images/project-d.jpg',
     description: 'This is Project D.',
   },
+};
+
+export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
+  [ProjectNamesEnum.MOKUHANGA]: [
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork D.',
+      dimensions: '100 x 100 cm',
+      image: '/images/artwork-d.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-d',
+      title: 'Artwork D',
+    },
+  ],
+  [ProjectNamesEnum.CAFE_SERIES]: [
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork B.',
+      dimensions: '100 x 100 cm',
+      image: '/images/artwork-b.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-b',
+      title: 'Artwork B',
+    },
+  ],
+  [ProjectNamesEnum.ANIMAL_WORLD]: [
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork C.',
+      dimensions: '100 x 100 cm',
+      image: '/images/artwork-c.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-c',
+      title: 'Artwork C',
+    },
+  ],
+  [ProjectNamesEnum.SURPRISE_ENCOUNTER]: [
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork D.',
+      dimensions: '100 x 100 cm',
+      image: '/images/artwork-d.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-d',
+      title: 'Artwork D',
+    },
+  ],
 };

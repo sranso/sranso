@@ -4,29 +4,34 @@ const data: Record<
   string,
   { title: string; image: string; description: string }
 > = {
-  'project-a': {
-    title: 'Project A',
-    image: '/images/project-a.jpg',
-    description: 'This is Project A.',
+  'artwork-a': {
+    title: 'Artwork A',
+    image: '/2024-surprise-encounter/24-moose.jpg',
+    description: 'This is Artwork A.',
   },
-  'project-b': {
-    title: 'Project B',
-    image: '/images/project-b.jpg',
-    description: 'This is Project B.',
+  'artwork-b': {
+    title: 'Artwork B',
+    image: '/images/artwork-b.jpg',
+    description: 'This is Artwork B.',
   },
 };
 
 export function Artwork() {
-  const { artwork } = useParams<{ artwork: string }>();
-  const project = data[artwork || ''];
+  const { artwork: artworkParam } = useParams<{ artwork: string }>();
+  const artwork = data[artworkParam || ''];
 
-  if (!project) return <div>Project not found.</div>;
+  if (!artwork)
+    return (
+      <main className='flex-1 p-6 md:ml-64'>
+        <div>Artwork not found.</div>
+      </main>
+    );
 
   return (
     <>
       <main className='flex-1 p-6 md:ml-64'>
-        <img src={project.image} alt={project.title} className='mb-4' />
-        <p>{project.description}</p>
+        <img src={artwork.image} alt={artwork.title} className='mb-4' />
+        <p>{artwork.description}</p>
       </main>
     </>
   );
