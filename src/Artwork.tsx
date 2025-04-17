@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { Artworks, ProjectNamesEnum } from './projects';
+import { Artworks, getArtworkPath, ProjectNamesEnum } from './projects';
 
 export function Artwork() {
   const { projectName, artwork: artworkParam } = useParams<{
@@ -13,7 +13,9 @@ export function Artwork() {
       </main>
     );
   const artworks = Artworks[projectName as ProjectNamesEnum];
-  const artwork = artworks.find((artwork) => artwork.path === artworkParam);
+  const artwork = artworks.find(
+    (artwork) => getArtworkPath(artwork) === artworkParam
+  );
 
   if (!artwork)
     return (

@@ -22,7 +22,6 @@ export type Artwork = {
   image: string;
   medium: string;
   notes?: string;
-  path: string;
   title: string;
 };
 
@@ -59,7 +58,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/2024-surprise-encounter/24-moose.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-a',
       title: 'Artwork D',
     },
     {
@@ -70,7 +68,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/2024-surprise-encounter/24-moose.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-a',
       title: 'Artwork D',
     },
     {
@@ -81,7 +78,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/2024-surprise-encounter/24-moose.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-a',
       title: 'Artwork D',
     },
   ],
@@ -94,7 +90,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/images/artwork-b.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-b',
       title: 'Artwork B',
     },
   ],
@@ -107,7 +102,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/images/artwork-c.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-c',
       title: 'Artwork C',
     },
   ],
@@ -120,8 +114,11 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       image: '/images/artwork-d.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-d',
       title: 'Artwork D',
     },
   ],
+};
+
+export const getArtworkPath = (artwork: Artwork) => {
+  return `${artwork.date}-${artwork.title.toLowerCase().replace(/ /g, '-')}`;
 };
