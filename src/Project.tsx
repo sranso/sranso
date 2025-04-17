@@ -1,9 +1,11 @@
 import { useParams } from 'react-router-dom';
-import { ProjectNamesEnum, Projects } from './projects';
+import { Artworks, ProjectNamesEnum, Projects } from './projects';
+import { Gallery } from './components/Gallery';
 
 export function Project() {
-  const { name } = useParams<{ project: string; name: string }>();
-  const project = Projects[name as ProjectNamesEnum];
+  const { projectName } = useParams<{ projectName: string }>();
+  const project = Projects[projectName as ProjectNamesEnum];
+  const artworks = Artworks[projectName as ProjectNamesEnum];
 
   if (!project) {
     return (
@@ -15,8 +17,10 @@ export function Project() {
 
   return (
     <main className='flex-1 p-6 md:ml-64'>
-      <img src={project.image} alt={project.title} className='mb-4' />
       <p>{project.description}</p>
+      <div className='max-w-7xl mx-auto'>
+        <Gallery artworks={artworks} />
+      </div>
     </main>
   );
 }

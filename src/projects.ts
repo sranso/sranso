@@ -10,13 +10,14 @@ export const enum ProjectNamesEnum {
  */
 export type Project = {
   title: string;
+  // todo remove this?
   image: string;
   description: string;
 };
 export type Artwork = {
   available?: boolean;
   date: string;
-  description: string;
+  description?: string;
   dimensions: string;
   image: string;
   medium: string;
@@ -55,10 +56,32 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-01-01',
       description: 'This is Artwork D.',
       dimensions: '100 x 100 cm',
-      image: '/images/artwork-d.jpg',
+      image: '/2024-surprise-encounter/24-moose.jpg',
       medium: 'Oil on canvas',
       notes: 'This is a note.',
-      path: 'artwork-d',
+      path: 'artwork-a',
+      title: 'Artwork D',
+    },
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork D.',
+      dimensions: '100 x 100 cm',
+      image: '/2024-surprise-encounter/24-moose.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-a',
+      title: 'Artwork D',
+    },
+    {
+      available: true,
+      date: '2024-01-01',
+      description: 'This is Artwork D.',
+      dimensions: '100 x 100 cm',
+      image: '/2024-surprise-encounter/24-moose.jpg',
+      medium: 'Oil on canvas',
+      notes: 'This is a note.',
+      path: 'artwork-a',
       title: 'Artwork D',
     },
   ],

@@ -9,8 +9,8 @@ export function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/project/:name' element={<Project />} />
-        <Route path='/project/:name/:artwork' element={<Artwork />} />
+        <Route path='/project/:projectName' element={<Project />} />
+        <Route path='/project/:projectName/:artwork' element={<Artwork />} />
       </Routes>
     </>
   );

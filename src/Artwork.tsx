@@ -1,24 +1,19 @@
 import { useParams } from 'react-router-dom';
-
-const data: Record<
-  string,
-  { title: string; image: string; description: string }
-> = {
-  'artwork-a': {
-    title: 'Artwork A',
-    image: '/2024-surprise-encounter/24-moose.jpg',
-    description: 'This is Artwork A.',
-  },
-  'artwork-b': {
-    title: 'Artwork B',
-    image: '/images/artwork-b.jpg',
-    description: 'This is Artwork B.',
-  },
-};
+import { Artworks, ProjectNamesEnum } from './projects';
 
 export function Artwork() {
-  const { artwork: artworkParam } = useParams<{ artwork: string }>();
-  const artwork = data[artworkParam || ''];
+  const { projectName, artwork: artworkParam } = useParams<{
+    projectName: string;
+    artwork: string;
+  }>();
+  if (!artworkParam)
+    return (
+      <main className='flex-1 p-6 md:ml-64'>
+        <div>Artwork not found.</div>
+      </main>
+    );
+  const artworks = Artworks[projectName as ProjectNamesEnum];
+  const artwork = artworks.find((artwork) => artwork.path === artworkParam);
 
   if (!artwork)
     return (
@@ -30,8 +25,18 @@ export function Artwork() {
   return (
     <>
       <main className='flex-1 p-6 md:ml-64'>
-        <img src={artwork.image} alt={artwork.title} className='mb-4' />
-        <p>{artwork.description}</p>
+        <div className='flex gap-4'>
+          <div>
+            <img src={artwork.image} alt={artwork.title} className='mb-4' />
+          </div>
+          <div className='flex-1 min-w-24 mt-8'>
+            <p className='italic'>{artwork.title}</p>
+            <p>{artwork.medium}</p>
+            <p>{artwork.dimensions}</p>
+            <p>{artwork.date}</p>
+            <p>{artwork.available ? 'Available' : 'Not available'}</p>
+          </div>
+        </div>
       </main>
     </>
   );
