@@ -31,7 +31,7 @@ export function Artwork() {
           <div>
             <img src={artwork.image} alt={artwork.title} className='mb-4' />
           </div>
-          <div className='flex-1 min-w-24 mt-8'>
+          <div className='min-w-32 mt-8 shrink-0'>
             <p className='italic'>{artwork.title}</p>
             <p>{artwork.medium}</p>
             <p>{artwork.dimensions}</p>
