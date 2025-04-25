@@ -4,5 +4,12 @@
 - 24 surprise encounter
 - 23 mount gretna
 - 22 paros
+- pre 2022 ? just dump it all together ?
+- birds i did for emma
+- works on cardboard ?
+- coffee drawings ?
 - illustrations
+  - ny'er stuff?
+  - bookmark
 - clothing
+- websites / writings
