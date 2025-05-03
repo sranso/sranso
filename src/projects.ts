@@ -5,12 +5,88 @@ export const enum ProjectNamesEnum {
   MT_GRETNA_2023 = '2023-mt-gretna',
   GSHI_2022 = '2022-gshi',
   OAXACA_2022 = '2022-oaxaca',
+  PAROS_2022 = '2022-paros',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   SURPRISE_ENCOUNTER = '2024-surprise-encounter',
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
   BIRDS_OF_NY = 'birds-of-ny',
   PETS = 'pets',
 }
+
+const roseSeries: Artwork[] = [
+  {
+    image: '/paros-greece/2022-4-rose-series-1.jpg',
+    title: 'The Ninth Rose, 1/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-2.jpg',
+    title: 'The Ninth Rose, 2/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-3.jpg',
+    title: 'The Ninth Rose, 3/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-4.jpg',
+    title: 'The Ninth Rose, 4/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-5.jpg',
+    title: 'The Ninth Rose, 5/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-6.jpg',
+    title: 'The Ninth Rose, 6/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-7.jpg',
+    title: 'The Ninth Rose, 7/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-8.jpg',
+    title: 'The Ninth Rose, 8/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/paros-greece/2022-4-rose-series-9.jpg',
+    title: 'The Ninth Rose, 9/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+];
 
 /**
  * Making a fake DB here. A project has many artworks.
@@ -75,6 +151,10 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.OAXACA_2022]: {
     title: 'Oaxaca 2022',
     description: 'This is Project J.',
+  },
+  [ProjectNamesEnum.PAROS_2022]: {
+    title: 'Paros 2022',
+    description: 'This is Project K.',
   },
 };
 
@@ -562,6 +642,15 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
   [ProjectNamesEnum.OAXACA_2022]: [
     {
+      image: '/oaxaca/2022-09-13-print.jpg',
+      title: 'Untitled, edition of 5',
+      medium: 'woodcut, ink on cotton',
+      dimensions: '7.5x9.5"',
+      available: true, // 2 avail?
+      date: '2022-09-13',
+      cost: 180,
+    },
+    {
       image: '/oaxaca/2022-10-20.jpg',
       title: 'Flowers, edition of 10',
       medium: 'etching, ink on cotton',
@@ -666,86 +755,65 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 320,
     },
   ],
+  [ProjectNamesEnum.PAROS_2022]: [
+    // ...roseSeries,
+    // coffee drawings ?
+    {
+      image: '/paros-greece/2022-3-27-bread.jpg',
+      title: 'Holy bread, 2022',
+      medium: 'graphite and gouache on gray paper',
+      dimensions: '11.75x15.25"',
+      available: true,
+      cost: 235,
+      date: '2022-03-27',
+    },
+    {
+      image: '/paros-greece/2022-3-self-portrait.jpg',
+      title: 'Self portrait, 2022',
+      medium: 'graphite and gouache on gray paper',
+      dimensions: '20x14.5"',
+      available: false,
+      cost: 235,
+      date: '2022-03-27',
+    },
+    {
+      image: '/paros-greece/2022-3-23-flowers.jpg',
+      title: 'Untitled, 2022',
+      medium: 'acrylic on paper',
+      dimensions: '29x40"',
+      available: false,
+      date: '2022-03-23',
+    },
+    {
+      image: '/paros-greece/2022-4-morandi.jpg',
+      title: 'Untitled, 2022',
+      medium: 'oil on board',
+      dimensions: '9x12"',
+      available: false,
+      date: '2022-04-01',
+    },
+    {
+      image: '/paros-greece/2022-4-still-bird.jpg',
+      title: 'Untitled, 2022',
+      medium: 'oil on board',
+      dimensions: '11x11"',
+      available: false,
+      date: '2022-04-01',
+    },
+    {
+      image: '/paros-greece/2022-4-cezanne-still.jpg',
+      title: 'Untitled, 2022',
+      medium: 'oil on canvas',
+      dimensions: '19.75x19.75"',
+      available: false,
+      date: '2022-04-01',
+    },
+  ],
 };
 
 export const getArtworkPath = (artwork: Artwork) => {
   return `${artwork.date}-${artwork.title.toLowerCase().replace(/ /g, '-')}`;
 };
-
-const roseSeries: Artwork[] = [
-  {
-    image: '/paros-greece/2022-4-rose-series-1.jpg',
-    title: 'The Ninth Rose, 1/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-2.jpg',
-    title: 'The Ninth Rose, 2/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-3.jpg',
-    title: 'The Ninth Rose, 3/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-4.jpg',
-    title: 'The Ninth Rose, 4/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: false,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-5.jpg',
-    title: 'The Ninth Rose, 5/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: false,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-6.jpg',
-    title: 'The Ninth Rose, 6/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-7.jpg',
-    title: 'The Ninth Rose, 7/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-8.jpg',
-    title: 'The Ninth Rose, 8/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: false,
-  },
-  {
-    image: '/paros-greece/2022-4-rose-series-9.jpg',
-    title: 'The Ninth Rose, 9/9',
-    medium: 'drypoint and watercolor on cotton',
-    dimensions: '3.75x6"',
-    date: '2022-04-01',
-    available: true,
-  },
-];
 
 const penAndPencil: Artwork[] = [
   {
@@ -756,33 +824,6 @@ const penAndPencil: Artwork[] = [
     available: true,
     cost: 310,
     date: '2021-09-26',
-  },
-  {
-    image: '/paros-greece/2022-3-27-bread.jpg',
-    title: 'Holy bread, 2022',
-    medium: 'graphite and gouache on gray paper',
-    dimensions: '11.75x15.25"',
-    available: true,
-    cost: 235,
-    date: '2022-03-27',
-  },
-  {
-    image: '/paros-greece/2022-3-self-portrait.jpg',
-    title: 'Self portrait, 2022',
-    medium: 'graphite and gouache on gray paper',
-    dimensions: '20x14.5"',
-    available: false,
-    cost: 235,
-    date: '2022-03-27',
-  },
-  {
-    image: '/maine/2022-6-30-neil.jpg',
-    title: 'Neil, 2022',
-    medium: 'pen on paper',
-    dimensions: '14x11"',
-    available: false,
-    cost: 125,
-    date: '2022-06-30',
   },
   {
     image: '/canada/2022-7-12-jimmy.jpg',

@@ -38,6 +38,9 @@ export const Sidebar = () => {
         <a href='/project/2022-oaxaca' className='block hover:underline'>
           2022 Oaxaca
         </a>
+        <a href='/project/2022-paros' className='block hover:underline'>
+          2022 Paros
+        </a>
         <a href='/project/2020-marcias-ranch' className='block hover:underline'>
           2020 Marcias Ranch
         </a>
