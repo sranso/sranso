@@ -2,7 +2,7 @@ export const enum ProjectNamesEnum {
   MOKUHANGA = '2025-mokuhanga',
   CAFE_SERIES = '2024-cafe-series',
   ANIMAL_WORLD = '2024-animal-world',
-  INTERIORS = '2023-interiors',
+  INTERIORS_2023 = '2023-interiors',
   MT_GRETNA_2023 = '2023-mt-gretna',
   GSHI_2022 = '2022-gshi',
   OAXACA_2022 = '2022-oaxaca',
@@ -157,7 +157,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     title: 'Paros 2022',
     description: 'This is Project K.',
   },
-  [ProjectNamesEnum.INTERIORS]: {
+  [ProjectNamesEnum.INTERIORS_2023]: {
     title: 'Interiors',
     description: 'This is Project L.',
   },
@@ -761,7 +761,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
   ],
   [ProjectNamesEnum.PAROS_2022]: [
-    // ...roseSeries,
+    ...roseSeries,
     // coffee drawings ?
     {
       image: '/paros-greece/2022-3-27-bread.jpg',
@@ -814,7 +814,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-04-01',
     },
   ],
-  [ProjectNamesEnum.INTERIORS]: [
+  [ProjectNamesEnum.INTERIORS_2023]: [
     {
       image: '/nyc/2023-01-26.jpg',
       title: 'Maquette, 2023',
