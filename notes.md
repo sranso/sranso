@@ -2,9 +2,7 @@
 - 24 cafe series
 - 24 animal world
 - 24 surprise encounter
-- 23 mount gretna
 - 22 paros
-- marcia's ranch
 - pre 2022 ? just dump it all together ?
 - birds i did for emma
 - works on cardboard ?
