@@ -221,7 +221,92 @@ export const getArtworkPath = (artwork: Artwork) => {
   return `${artwork.date}-${artwork.title.toLowerCase().replace(/ /g, '-')}`;
 };
 
-const idk: Artwork[] = [
+const roseSeries: Artwork[] = [
+  {
+    image: '/img/paros-greece/2022-4-rose-series-1.jpg',
+    title: 'The Ninth Rose, 1/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-2.jpg',
+    title: 'The Ninth Rose, 2/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-3.jpg',
+    title: 'The Ninth Rose, 3/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-4.jpg',
+    title: 'The Ninth Rose, 4/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-5.jpg',
+    title: 'The Ninth Rose, 5/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-6.jpg',
+    title: 'The Ninth Rose, 6/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-7.jpg',
+    title: 'The Ninth Rose, 7/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-8.jpg',
+    title: 'The Ninth Rose, 8/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: false,
+  },
+  {
+    image: '/img/paros-greece/2022-4-rose-series-9.jpg',
+    title: 'The Ninth Rose, 9/9',
+    medium: 'drypoint and watercolor on cotton',
+    dimensions: '3.75x6"',
+    date: '2022-04-01',
+    available: true,
+  },
+  // diff, flowers in oaxaca
+  {
+    image: '/img/oaxaca/2022-10-20.jpg',
+    title: 'Flowers, edition of 10',
+    medium: 'etching, ink on cotton',
+    dimensions: '7.6x7.6"',
+    date: '2022-10-20',
+    available: true,
+    cost: 185,
+  },
+];
+
+const miscWatercolor: Artwork[] = [
   {
     image: '/img/oaxaca/2022-10-04.jpg',
     title: 'Buddies',
