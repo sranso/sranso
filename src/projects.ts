@@ -4,6 +4,7 @@ export const enum ProjectNamesEnum {
   ANIMAL_WORLD = '2024-animal-world',
   MT_GRETNA_2023 = '2023-mt-gretna',
   GSHI_2022 = '2022-gshi',
+  OAXACA_2022 = '2022-oaxaca',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   SURPRISE_ENCOUNTER = '2024-surprise-encounter',
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
@@ -70,6 +71,10 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: {
     title: 'Marcias Ranch 2020',
     description: 'This is Project I.',
+  },
+  [ProjectNamesEnum.OAXACA_2022]: {
+    title: 'Oaxaca 2022',
+    description: 'This is Project J.',
   },
 };
 
@@ -580,6 +585,112 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-07',
     },
   ],
+  [ProjectNamesEnum.OAXACA_2022]: [
+    {
+      image: '/oaxaca/2022-10-20.jpg',
+      title: 'Flowers, edition of 10',
+      medium: 'etching, ink on cotton',
+      dimensions: '7.6x7.6"',
+      available: true,
+      date: '2022-10-20',
+      cost: 185,
+    },
+    {
+      image: '/oaxaca/2022-09-05.jpg',
+      title: 'Bedroom at night, 2022',
+      medium: 'ink on bristol',
+      dimensions: '8x24"',
+      available: false,
+      cost: 250,
+      date: '2022-09-05',
+    },
+    {
+      image: '/oaxaca/2022-09-11.jpg',
+      title: 'Untitled, 2022',
+      medium: 'pen on paper',
+      dimensions: '14x11"',
+      available: false,
+      cost: 200,
+      date: '2022-09-11',
+    },
+    {
+      image: '/oaxaca/2022-10-04.jpg',
+      title: 'Buddies',
+      medium: 'watercolor on paper',
+      dimensions: '16x12"',
+      available: true,
+      cost: 400,
+      date: '2022-10-04',
+    },
+    {
+      image: '/oaxaca/2022-09-20.JPG',
+      title: 'Nature sketch',
+      medium: 'watercolor on paper',
+      dimensions: '10x12"',
+      available: false,
+      date: '2022-09-20',
+    },
+    {
+      image: '/oaxaca/2022-09-09.jpg',
+      title: 'Night study',
+      medium: 'watercolor on paper',
+      dimensions: '16x12"',
+      available: false,
+      date: '2022-09-09',
+    },
+    {
+      image: '/oaxaca/2022-09-30.jpg',
+      title: 'Flowers in space, 2022',
+      medium: 'acrylic on three boards',
+      dimensions: '16x16"',
+      available: true,
+      date: '2022-09-30',
+      cost: 820,
+    },
+    {
+      image: '/oaxaca/2022-09-23.jpg',
+      title: 'Flowers, 2022',
+      medium: 'acrylic on two boards',
+      dimensions: '10x16"',
+      available: false,
+      date: '2022-09-23',
+    },
+    {
+      image: '/oaxaca/2022-09-22-corner.jpg',
+      title: 'Add it to the wall series!, 2022',
+      medium: 'acrylic on canvas',
+      dimensions: '10x8"',
+      available: false,
+      date: '2022-09-22',
+    },
+    {
+      image: '/oaxaca/2022-09-19.jpg',
+      title: 'Rainy season, 2022',
+      medium: 'acrylic on canvas',
+      dimensions: '6x8"',
+      available: true,
+      date: '2022-09-19',
+      cost: 150,
+    },
+    {
+      image: '/oaxaca/2022-09-17.jpg',
+      title: 'To stay, 2022',
+      medium: 'acrylic on two boards',
+      dimensions: '12x18"',
+      available: false,
+      date: '2022-09-17',
+      cost: 540,
+    },
+    {
+      image: '/oaxaca/2022-09-10.jpg',
+      title: 'Night porch, 2022',
+      medium: 'acrylic on two boards',
+      dimensions: '8x16"',
+      available: false,
+      date: '2022-09-10',
+      cost: 320,
+    },
+  ],
 };
 
 export const getArtworkPath = (artwork: Artwork) => {
@@ -659,16 +770,6 @@ const roseSeries: Artwork[] = [
     date: '2022-04-01',
     available: true,
   },
-  // diff, flowers in oaxaca
-  {
-    image: '/oaxaca/2022-10-20.jpg',
-    title: 'Flowers, edition of 10',
-    medium: 'etching, ink on cotton',
-    dimensions: '7.6x7.6"',
-    date: '2022-10-20',
-    available: true,
-    cost: 185,
-  },
 ];
 
 const penAndPencil: Artwork[] = [
@@ -744,52 +845,9 @@ const penAndPencil: Artwork[] = [
     cost: 345,
     date: '2022-08-24',
   },
-  {
-    image: '/oaxaca/2022-09-05.jpg',
-    title: 'Bedroom at night, 2022',
-    medium: 'ink on bristol',
-    dimensions: '8x24"',
-    available: false,
-    cost: 250,
-    date: '2022-09-05',
-  },
-  {
-    image: '/oaxaca/2022-09-11.jpg',
-    title: 'Untitled, 2022',
-    medium: 'pen on paper',
-    dimensions: '14x11"',
-    available: false,
-    cost: 200,
-    date: '2022-09-11',
-  },
 ];
 
 const miscWatercolor: Artwork[] = [
-  {
-    image: '/oaxaca/2022-10-04.jpg',
-    title: 'Buddies',
-    medium: 'watercolor on paper',
-    dimensions: '16x12"',
-    available: true,
-    cost: 400,
-    date: '2022-10-04',
-  },
-  {
-    image: '/oaxaca/2022-09-20.JPG',
-    title: 'Nature sketch',
-    medium: 'watercolor on paper',
-    dimensions: '10x12"',
-    available: false,
-    date: '2022-09-20',
-  },
-  {
-    image: '/oaxaca/2022-09-09.jpg',
-    title: 'Night study',
-    medium: 'watercolor on paper',
-    dimensions: '16x12"',
-    available: false,
-    date: '2022-09-09',
-  },
   // 2022 and earlier
   {
     image: '/nc/2022-6-18.jpg',
