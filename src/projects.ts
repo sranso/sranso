@@ -2,6 +2,7 @@ export const enum ProjectNamesEnum {
   MOKUHANGA = '2025-mokuhanga',
   CAFE_SERIES = '2024-cafe-series',
   ANIMAL_WORLD = '2024-animal-world',
+  INTERIORS = '2023-interiors',
   MT_GRETNA_2023 = '2023-mt-gretna',
   GSHI_2022 = '2022-gshi',
   OAXACA_2022 = '2022-oaxaca',
@@ -155,6 +156,10 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.PAROS_2022]: {
     title: 'Paros 2022',
     description: 'This is Project K.',
+  },
+  [ProjectNamesEnum.INTERIORS]: {
+    title: 'Interiors',
+    description: 'This is Project L.',
   },
 };
 
@@ -807,6 +812,53 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '19.75x19.75"',
       available: false,
       date: '2022-04-01',
+    },
+  ],
+  [ProjectNamesEnum.INTERIORS]: [
+    {
+      image: '/nyc/2023-01-26.jpg',
+      title: 'Maquette, 2023',
+      medium: 'acrylic on board',
+      dimensions: '10x8"',
+      available: true,
+      cost: 240,
+      date: '2023-01-26',
+    },
+    {
+      image: '/nyc/2023-01-23.jpg',
+      title: 'Untitled, 2023',
+      medium: 'acrylic on board',
+      dimensions: '10x8"',
+      available: false,
+      cost: 240,
+      date: '2023-01-23',
+    },
+    {
+      image: '/nyc/2023-01-15.jpg',
+      title: 'Finding space, 2023',
+      medium: 'acrylic on two boards',
+      dimensions: '12x18"',
+      available: false,
+      cost: 540,
+      date: '2023-01-15',
+    },
+    {
+      image: '/nyc/2023-01-14-2.jpg',
+      title: 'Yin yang, 2023',
+      medium: 'acrylic on two boards',
+      dimensions: '12x18"',
+      available: false,
+      cost: 540,
+      date: '2023-01-14',
+    },
+    {
+      image: '/nyc/2023-01-04.jpg',
+      title: "The sun's going down, 2023",
+      medium: 'acrylic on board',
+      dimensions: '10x8"',
+      available: false,
+      cost: 240,
+      date: '2023-01-04',
     },
   ],
 };
