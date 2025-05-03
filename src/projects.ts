@@ -6,6 +6,7 @@ export const enum ProjectNamesEnum {
   SURPRISE_ENCOUNTER = '2024-surprise-encounter',
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
   BIRDS_OF_NY = 'birds-of-ny',
+  PETS = 'pets',
 }
 
 /**
@@ -55,6 +56,10 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.BIRDS_OF_NY]: {
     title: 'Birds of NY',
     description: 'This is Project G.',
+  },
+  [ProjectNamesEnum.PETS]: {
+    title: 'Pets',
+    description: 'This is Project H.',
   },
 };
 
@@ -131,7 +136,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: [
     {
       date: '2023-09-11',
-      image: '/img/nyc/2023-09-11.jpg',
+      image: '/nyc/2023-09-11.jpg',
       medium: 'gouache on carton board',
       title: 'Figs and bar tools',
       dimensions: '6x8"',
@@ -139,7 +144,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
     {
       date: '2023-09-10',
-      image: '/img/nyc/2023-09-10.jpg',
+      image: '/nyc/2023-09-10.jpg',
       title: 'First time here',
       medium: 'gouache on carton board',
       dimensions: '6x8"',
@@ -149,7 +154,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
   [ProjectNamesEnum.MT_GRETNA_2023]: [
     {
-      image: '/img/mount-gretna/07-08-23-martha-sun.jpg',
+      image: '/mount-gretna/07-08-23-martha-sun.jpg',
       title: "Martha's sun",
       medium: 'watercolor & gouache on paper',
       dimensions: '8x10"',
@@ -157,7 +162,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/mount-gretna/06-01-23.jpg',
+      image: '/mount-gretna/06-01-23.jpg',
       title: 'Nature shapes',
       medium: 'watercolor & gouache on carton board',
       dimensions: '8x10"',
@@ -167,7 +172,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
   [ProjectNamesEnum.BIRDS_OF_NY]: [
     {
-      image: '/img/nyc/2022-12-1-tufted-titmouse.jpg',
+      image: '/nyc/2022-12-1-tufted-titmouse.jpg',
       title: 'Tufted titmouse',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -175,7 +180,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/nyc/2022-12-1-red-winged-blackbird.jpg',
+      image: '/nyc/2022-12-1-red-winged-blackbird.jpg',
       title: 'Red winged blackbird',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -183,7 +188,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/nyc/2022-12-1-oriole.jpg',
+      image: '/nyc/2022-12-1-oriole.jpg',
       title: 'Oriole',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -191,7 +196,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/nyc/2022-12-1-northern-flicker.jpg',
+      image: '/nyc/2022-12-1-northern-flicker.jpg',
       title: 'Northern flicker',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -199,7 +204,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/nyc/2022-12-1-northern-cardinal.jpg',
+      image: '/nyc/2022-12-1-northern-cardinal.jpg',
       title: 'Northern cardinal',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -207,12 +212,94 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/img/nyc/2022-12-1-eastern-bluebird.jpg',
+      image: '/nyc/2022-12-1-eastern-bluebird.jpg',
       title: 'Eastern bluebird',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
       date: '2022-12-01',
       available: false,
+    },
+  ],
+  [ProjectNamesEnum.PETS]: [
+    {
+      image: '/pets/2023-01-31-Ollie.jpg',
+      title: 'Milo',
+      medium: 'iPad',
+      available: false,
+      date: '2023-01-31',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/pets/2023-01-31-Ethan.jpg',
+      title: 'Ethan',
+      medium: 'iPad',
+      available: false,
+      date: '2023-01-31',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/pets/2022-5-Dean.jpg',
+      title: 'Dean',
+      medium: 'iPad',
+      available: false,
+      date: '2022-05-01',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/nyc/2021-12-25.jpg',
+      title: 'Miso',
+      medium: 'iPad',
+      available: false,
+      date: '2021-12-25',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/nyc/2021-12-24-xena.jpg',
+      title: 'Xena',
+      medium: 'iPad',
+      available: false,
+      date: '2021-12-24',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/pets/2021-12-6-jerry.png',
+      title: 'Jerry',
+      medium: 'iPad',
+      available: false,
+      date: '2021-12-06',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/pets/2020-brisket.jpg',
+      title: 'Brisket',
+      medium: 'watercolor on paper',
+      dimensions: '14x10"',
+      available: false,
+      date: '2020-01-01',
+    },
+    {
+      image: '/pets/2020-angus.jpg',
+      title: 'Angus',
+      medium: 'watercolor on paper',
+      dimensions: '14x10"',
+      available: false,
+      date: '2020-01-01',
+    },
+    {
+      image: '/marcias-ranch/2020-9-5-toby.jpg',
+      title: 'Toby',
+      medium: 'acrylic on board',
+      dimensions: '4x4"',
+      available: false,
+      date: '2020-09-05',
+    },
+    {
+      image: '/marcias-ranch/2020-9-5-eartha.jpg',
+      title: 'Eartha',
+      medium: 'acrylic on board',
+      dimensions: '3x4"',
+      available: false,
+      date: '2020-09-05',
     },
   ],
 };
@@ -223,7 +310,7 @@ export const getArtworkPath = (artwork: Artwork) => {
 
 const roseSeries: Artwork[] = [
   {
-    image: '/img/paros-greece/2022-4-rose-series-1.jpg',
+    image: '/paros-greece/2022-4-rose-series-1.jpg',
     title: 'The Ninth Rose, 1/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -231,7 +318,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-2.jpg',
+    image: '/paros-greece/2022-4-rose-series-2.jpg',
     title: 'The Ninth Rose, 2/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -239,7 +326,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-3.jpg',
+    image: '/paros-greece/2022-4-rose-series-3.jpg',
     title: 'The Ninth Rose, 3/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -247,7 +334,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-4.jpg',
+    image: '/paros-greece/2022-4-rose-series-4.jpg',
     title: 'The Ninth Rose, 4/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -255,7 +342,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-5.jpg',
+    image: '/paros-greece/2022-4-rose-series-5.jpg',
     title: 'The Ninth Rose, 5/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -263,7 +350,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-6.jpg',
+    image: '/paros-greece/2022-4-rose-series-6.jpg',
     title: 'The Ninth Rose, 6/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -271,7 +358,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-7.jpg',
+    image: '/paros-greece/2022-4-rose-series-7.jpg',
     title: 'The Ninth Rose, 7/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -279,7 +366,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-8.jpg',
+    image: '/paros-greece/2022-4-rose-series-8.jpg',
     title: 'The Ninth Rose, 8/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -287,7 +374,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/img/paros-greece/2022-4-rose-series-9.jpg',
+    image: '/paros-greece/2022-4-rose-series-9.jpg',
     title: 'The Ninth Rose, 9/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -296,7 +383,7 @@ const roseSeries: Artwork[] = [
   },
   // diff, flowers in oaxaca
   {
-    image: '/img/oaxaca/2022-10-20.jpg',
+    image: '/oaxaca/2022-10-20.jpg',
     title: 'Flowers, edition of 10',
     medium: 'etching, ink on cotton',
     dimensions: '7.6x7.6"',
@@ -308,7 +395,7 @@ const roseSeries: Artwork[] = [
 
 const miscWatercolor: Artwork[] = [
   {
-    image: '/img/oaxaca/2022-10-04.jpg',
+    image: '/oaxaca/2022-10-04.jpg',
     title: 'Buddies',
     medium: 'watercolor on paper',
     dimensions: '16x12"',
@@ -317,7 +404,7 @@ const miscWatercolor: Artwork[] = [
     date: '2022-10-04',
   },
   {
-    image: '/img/oaxaca/2022-09-20.JPG',
+    image: '/oaxaca/2022-09-20.JPG',
     title: 'Nature sketch',
     medium: 'watercolor on paper',
     dimensions: '10x12"',
@@ -325,7 +412,7 @@ const miscWatercolor: Artwork[] = [
     date: '2022-09-20',
   },
   {
-    image: '/img/oaxaca/2022-09-09.jpg',
+    image: '/oaxaca/2022-09-09.jpg',
     title: 'Night study',
     medium: 'watercolor on paper',
     dimensions: '16x12"',
@@ -334,7 +421,7 @@ const miscWatercolor: Artwork[] = [
   },
   // gshi
   {
-    image: '/img/maine/2022-7-1-water-wc.jpg',
+    image: '/maine/2022-7-1-water-wc.jpg',
     title: 'From under the bridge',
     medium: 'watercolor on paper',
     dimensions: '18x24"',
@@ -343,7 +430,7 @@ const miscWatercolor: Artwork[] = [
     cost: 730,
   },
   {
-    image: '/img/maine/2022-7-1-wc.jpg',
+    image: '/maine/2022-7-1-wc.jpg',
     title: 'A seal jumped for fish',
     medium: 'watercolor on paper',
     dimensions: '18x24"',
@@ -352,7 +439,7 @@ const miscWatercolor: Artwork[] = [
     cost: 730,
   },
   {
-    image: '/img/maine/2022-6-29-wc.jpg',
+    image: '/maine/2022-6-29-wc.jpg',
     title: 'A slug sat in my palette',
     medium: 'watercolor on paper',
     dimensions: '18x24"',
@@ -362,7 +449,7 @@ const miscWatercolor: Artwork[] = [
   },
   // 2022 and earlier
   {
-    image: '/img/nc/2022-6-18.jpg',
+    image: '/nc/2022-6-18.jpg',
     title: 'The red tree again',
     medium: 'watercolor on paper',
     dimensions: '4x6"',
@@ -370,7 +457,7 @@ const miscWatercolor: Artwork[] = [
     date: '2022-06-18',
   },
   {
-    image: '/img/nc/2022-6-17.jpg',
+    image: '/nc/2022-6-17.jpg',
     title: 'The red tree',
     medium: 'watercolor on paper',
     dimensions: '4x6"',
@@ -378,7 +465,7 @@ const miscWatercolor: Artwork[] = [
     date: '2022-06-17',
   },
   {
-    image: '/img/paros-greece/2022-2-church.jpg',
+    image: '/paros-greece/2022-2-church.jpg',
     title: 'Church',
     medium: 'watercolor on paper',
     dimensions: '9x12"',
@@ -386,7 +473,7 @@ const miscWatercolor: Artwork[] = [
     date: '2022-02-01',
   },
   {
-    image: '/img/marcias-ranch/2020-8-14-purple-sky.JPG',
+    image: '/marcias-ranch/2020-8-14-purple-sky.JPG',
     title: 'Sunset',
     medium: 'watercolor on paper',
     dimensions: '8x11.5"',
@@ -394,7 +481,7 @@ const miscWatercolor: Artwork[] = [
     date: '2020-08-14',
   },
   {
-    image: '/img/marcias-ranch/2020-8-14-pink-sky.JPG',
+    image: '/marcias-ranch/2020-8-14-pink-sky.JPG',
     title: 'Sunset',
     medium: 'watercolor on paper',
     dimensions: '8x11.5"',
@@ -402,7 +489,7 @@ const miscWatercolor: Artwork[] = [
     date: '2020-08-14',
   },
   {
-    image: '/img/nc/2020-6-29-rosemary-field.jpg',
+    image: '/nc/2020-6-29-rosemary-field.jpg',
     title: "Rosemary's farm",
     medium: 'watercolor on paper',
     dimensions: '5.5x12"',
@@ -410,7 +497,7 @@ const miscWatercolor: Artwork[] = [
     date: '2020-06-29',
   },
   {
-    image: '/img/nc/2020-5-jlo.jpg',
+    image: '/nc/2020-5-jlo.jpg',
     title: 'North Carolina home',
     medium: 'watercolor on paper',
     dimensions: '4x6"',
@@ -418,7 +505,7 @@ const miscWatercolor: Artwork[] = [
     date: '2020-05-01',
   },
   {
-    image: '/img/nc/2020-4-18-barn.jpg',
+    image: '/nc/2020-4-18-barn.jpg',
     title: "Rosemary's barn",
     medium: 'watercolor on paper',
     dimensions: '5x8"',
@@ -426,7 +513,7 @@ const miscWatercolor: Artwork[] = [
     date: '2020-04-18',
   },
   {
-    image: '/img/canada/2017-canada-sketch.jpg',
+    image: '/canada/2017-canada-sketch.jpg',
     title: 'The Big House',
     medium: 'watercolor on paper',
     dimensions: '5x8"',
