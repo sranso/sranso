@@ -308,15 +308,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-06-30',
     },
     {
-      image: '/maine/2022-7-1-water-wc.jpg',
-      title: 'From under the bridge',
-      medium: 'watercolor on paper',
-      dimensions: '18x24"',
-      available: false,
-      date: '2022-07-01',
-      cost: 730,
-    },
-    {
       image: '/maine/2022-7-1-wc.jpg',
       title: 'A seal jumped for fish',
       medium: 'watercolor on paper',
@@ -444,22 +435,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
   ],
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: [
-    {
-      image: '/marcias-ranch/2020-8-14-purple-sky.JPG',
-      title: 'Sunset',
-      medium: 'watercolor on paper',
-      dimensions: '8x11.5"',
-      available: false,
-      date: '2020-08-14',
-    },
-    {
-      image: '/marcias-ranch/2020-8-14-pink-sky.JPG',
-      title: 'Sunset',
-      medium: 'watercolor on paper',
-      dimensions: '8x11.5"',
-      available: false,
-      date: '2020-08-14',
-    },
     {
       image: '/marcias-ranch/2020-8-14-purple-sky.JPG',
       title: 'Sunset',

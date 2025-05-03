@@ -29,6 +29,18 @@ export const Sidebar = () => {
         >
           2024 Surprise encounter
         </a>
+        <a href='/project/2023-mt-gretna' className='block hover:underline'>
+          2023 Mt Gretna
+        </a>
+        <a href='/project/2022-gshi' className='block hover:underline'>
+          2022 Gshi
+        </a>
+        <a href='/project/2022-oaxaca' className='block hover:underline'>
+          2022 Oaxaca
+        </a>
+        <a href='/project/2020-marcias-ranch' className='block hover:underline'>
+          2020 Marcias Ranch
+        </a>
         <div className='bg-gray-600 w-full h-px my-2'></div>
         <a href='/about' className='block hover:underline'>
           About
