@@ -1,4 +1,5 @@
 export const enum ProjectNamesEnum {
+  CLOTHING = 'clothing',
   MOKUHANGA = '2025-mokuhanga',
   CAFE_SERIES = '2024-cafe-series',
   ANIMAL_WORLD = '2024-animal-world',
@@ -109,6 +110,10 @@ export type Artwork = {
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
+  [ProjectNamesEnum.CLOTHING]: {
+    title: 'Clothing',
+    description: 'This is Project A.',
+  },
   [ProjectNamesEnum.MOKUHANGA]: {
     title: '2025 Mokuhanga',
     description: 'This is Project A.',
@@ -198,14 +203,40 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
   [ProjectNamesEnum.CAFE_SERIES]: [
     {
+      image: '/nyc/2023-11-26.jpg',
+      title: 'Maquette, 2023',
+      medium: 'acrylic on board',
+      dimensions: '10x8"',
       available: true,
-      date: '2024-01-01',
-      description: 'This is Artwork B.',
-      dimensions: '100 x 100 cm',
-      image: '/images/artwork-b.jpg',
-      medium: 'Oil on canvas',
-      notes: 'This is a note.',
-      title: 'Artwork B',
+      cost: 240,
+      date: '2023-01-26',
+    },
+    {
+      image: '/nyc/2024-02-08.jpg',
+      title: 'Untitled',
+      medium: 'oil on cardboard',
+      dimensions: '10x10"',
+      available: true,
+      cost: 240,
+      date: '2024-02-08',
+    },
+    {
+      image: '/nyc/2024-02-28.JPG',
+      title: 'Light and wind',
+      medium: 'oil on canvas',
+      dimensions: '20x16"',
+      available: true,
+      cost: 240,
+      date: '2024-02-24',
+    },
+    {
+      image: '/nyc/2024-02-28.JPG',
+      title: 'Untitled',
+      medium: 'oil on board',
+      dimensions: '9x12"',
+      available: true,
+      cost: 240,
+      date: '2024-02-24',
     },
   ],
   [ProjectNamesEnum.ANIMAL_WORLD]: [
@@ -647,6 +678,14 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
   [ProjectNamesEnum.OAXACA_2022]: [
     {
+      image: '/oaxaca/2022-10-08.jpg',
+      title: 'Nature study, 2022',
+      medium: 'watercolor on paper',
+      dimensions: '16x12"',
+      available: false,
+      date: '2022-10-08',
+    },
+    {
       image: '/oaxaca/2022-09-13-print.jpg',
       title: 'Untitled, edition of 5',
       medium: 'woodcut, ink on cotton',
@@ -861,6 +900,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-04',
     },
   ],
+  [ProjectNamesEnum.CLOTHING]: [],
 };
 
 export const getArtworkPath = (artwork: Artwork) => {
