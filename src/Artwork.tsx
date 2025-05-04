@@ -26,10 +26,14 @@ export function Artwork() {
 
   return (
     <>
-      <main className='flex-1 p-6 md:ml-64'>
-        <div className='flex gap-4'>
+      <main className='flex-1 p-6 md:ml-64 h-full'>
+        <div className='flex gap-4 h-full'>
           <div>
-            <img src={artwork.image} alt={artwork.title} className='mb-4' />
+            <img
+              src={artwork.image}
+              alt={artwork.title}
+              className='mb-4 max-h-4/5'
+            />
           </div>
           <div className='min-w-32 mt-8 shrink-0'>
             <p className='italic'>{artwork.title}</p>

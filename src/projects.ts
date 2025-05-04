@@ -1,17 +1,22 @@
 export const enum ProjectNamesEnum {
+  // next
+  ANIMAL_WORLD_2024 = '2024-animal-world',
+  BIRDS_OF_NY = 'birds-of-ny',
+  SURPRISE_ENCOUNTER = '2024-surprise-encounter',
+  CAFE_SERIES = '2024-cafe-series',
   CLOTHING = 'clothing',
   MOKUHANGA = '2025-mokuhanga',
-  CAFE_SERIES = '2024-cafe-series',
-  ANIMAL_WORLD = '2024-animal-world',
-  INTERIORS_2023 = '2023-interiors',
-  MT_GRETNA_2023 = '2023-mt-gretna',
+
+  // tbd
+  WORKS_ON_CARDBOARD = 'works-on-cardboard',
+
+  // done
   GSHI_2022 = '2022-gshi',
+  INTERIORS_2023 = '2023-interiors',
+  MARCIAS_RANCH_2020 = '2020-marcias-ranch',
+  MT_GRETNA_2023 = '2023-mt-gretna',
   OAXACA_2022 = '2022-oaxaca',
   PAROS_2022 = '2022-paros',
-  MARCIAS_RANCH_2020 = '2020-marcias-ranch',
-  SURPRISE_ENCOUNTER = '2024-surprise-encounter',
-  WORKS_ON_CARDBOARD = 'works-on-cardboard',
-  BIRDS_OF_NY = 'birds-of-ny',
   PETS = 'pets',
 }
 
@@ -122,7 +127,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     title: '2024 Cafe series',
     description: 'This is Project B.',
   },
-  [ProjectNamesEnum.ANIMAL_WORLD]: {
+  [ProjectNamesEnum.ANIMAL_WORLD_2024]: {
     title: '2024 Animal world',
     description: 'This is Project C.',
   },
@@ -239,7 +244,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-02-24',
     },
   ],
-  [ProjectNamesEnum.ANIMAL_WORLD]: [
+  [ProjectNamesEnum.ANIMAL_WORLD_2024]: [
     {
       available: true,
       date: '2024-01-01',
@@ -904,7 +909,11 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
 };
 
 export const getArtworkPath = (artwork: Artwork) => {
-  return `${artwork.date}-${artwork.title.toLowerCase().replace(/ /g, '-')}`;
+  return `${artwork.date}-${artwork.title
+    .toLowerCase()
+    .replace(/ /g, '-')
+    .replace(/,/g, '-')
+    .replace(/\//g, '-')}`;
 };
 
 const penAndPencil: Artwork[] = [

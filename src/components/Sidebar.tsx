@@ -14,7 +14,7 @@ export const Sidebar = () => {
 
       <nav className='space-y-1'>
         <p className='font-medium'>Projects</p>
-        <a href='/project/2025-mokuhanga' className='block hover:underline'>
+        {/* <a href='/project/2025-mokuhanga' className='block hover:underline'>
           2025 Mokuhanga
         </a>
         <a href='/project/2024-cafe-series' className='block hover:underline'>
@@ -28,7 +28,7 @@ export const Sidebar = () => {
           className='block hover:underline'
         >
           2024 Surprise encounter
-        </a>
+        </a> */}
         <a href='/project/2023-interiors' className='block hover:underline'>
           2023 Interiors
         </a>
@@ -47,6 +47,41 @@ export const Sidebar = () => {
         <a href='/project/2020-marcias-ranch' className='block hover:underline'>
           2020 Marcias Ranch
         </a>
+
+        <div className='bg-gray-600 w-full h-px my-2'></div>
+        <p className='font-medium'>Silly sites</p>
+        {/* <a className='block hover:underline' href='/art/cartoons'>
+          The New Yorker
+        </a> */}
+        <a
+          className='block hover:underline'
+          href='https://prettygoodtherapy.com/'
+          target='_blank'
+        >
+          Pretty Good Therapy
+        </a>
+        <a
+          className='block hover:underline'
+          href='https://sarah-got-a-job.vercel.app/'
+          target='_blank'
+        >
+          Sarah Got A Job
+        </a>
+        <a
+          className='block hover:underline'
+          href='https://www.rhizomaticnetwork.art/'
+          target='_blank'
+        >
+          rhizomaticnetwork.art
+        </a>
+        <a
+          className='block hover:underline'
+          href='https://scone-heads.com/'
+          target='_blank'
+        >
+          Scone Heads
+        </a>
+
         <div className='bg-gray-600 w-full h-px my-2'></div>
         <a href='/about' className='block hover:underline'>
           About

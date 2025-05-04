@@ -1,8 +1,3 @@
-- 25 mokuhanga
-- 24 cafe series
-- 24 animal world
-- 24 surprise encounter
-- 22 paros
 - pre 2022 ? just dump it all together ?
 - works on cardboard ?
 - coffee drawings ?
