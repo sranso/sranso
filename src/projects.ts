@@ -1014,3 +1014,78 @@ const miscWatercolor: Artwork[] = [
     date: '2017-01-01',
   },
 ];
+
+const iPad: Artwork[] = [
+  {
+    image: '/nyc/2023-01-05.JPG',
+    title: 'Mood, 2023',
+    medium: 'iPad',
+    dimensions: '10x10"',
+    available: true, // prints
+    date: '2023-01-05',
+    notes:
+      'Signed prints available. Printed on 100% cotton fine art paper. $240',
+  },
+  {
+    image: '/nyc/2022-11-08-tree.jpg',
+    title: 'The colors, 2022',
+    medium: 'iPad',
+    dimensions: '12x12", 16x16"',
+    available: true, // prints
+    date: '2022-11-08',
+    notes:
+      'Signed prints available. 12x12" for $60, 16x16" for $100. Printed on 100% cotton fine art paper',
+  },
+  {
+    image: '/nyc/2022-10-27-brooklyn-grange.JPG',
+    title: 'Brooklyn Grange rooftop, 2022',
+    medium: 'iPad',
+    dimensions: '12x8"',
+    available: true, // prints
+    date: '2022-10-27',
+    notes:
+      'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
+  },
+  {
+    image: '/paros-greece/2022-2-9-bowl.png',
+    title: 'Untitled, 2022',
+    medium: 'iPad',
+    dimensions: 'n/a',
+    available: false,
+    date: '2022-02-09',
+    notes:
+      'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
+  },
+  {
+    image: '/nc/2021-12-27.png',
+    title: "Mom and dad's back yard, 2021",
+    medium: 'iPad',
+    dimensions: 'n/a',
+    available: false,
+    date: '2021-12-27',
+  },
+  {
+    image: '/canada/2021-11-17-canada.jpg',
+    title: 'Untitled, 2021',
+    medium: 'iPad',
+    dimensions: 'n/a',
+    available: false,
+    date: '2021-11-17',
+  },
+  {
+    image: '/canada/2021-11-17-canada.jpg',
+    title: 'Untitled, 2021',
+    medium: 'iPad',
+    dimensions: 'n/a',
+    available: false,
+    date: '2021-11-17',
+  },
+  {
+    image: '/marcias-ranch/2021-11-15-Holly.jpg',
+    title: 'Hollyhocks, 2021',
+    medium: 'iPad',
+    dimensions: 'n/a',
+    available: false,
+    date: '2021-11-15',
+  },
+];
