@@ -1,3 +1,7 @@
+- add descriptions (or hide them for now)
+- deploy current site
+- add 'next' projects
+
 - pre 2022 ? just dump it all together ?
 - works on cardboard ?
 - coffee drawings ?
