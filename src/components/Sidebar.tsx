@@ -35,6 +35,9 @@ export const Sidebar = () => {
         <a href='/project/2023-mt-gretna' className='block hover:underline'>
           2023 Mt Gretna
         </a>
+        <a href='/project/2023-birds-of-ny' className='block hover:underline'>
+          2023 Birds of NY
+        </a>
         <a href='/project/2022-gshi' className='block hover:underline'>
           2022 Great Spruce Head Island
         </a>

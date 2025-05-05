@@ -1,22 +1,20 @@
 export const enum ProjectNamesEnum {
-  // next
-  ANIMAL_WORLD_2024 = '2024-animal-world',
-  BIRDS_OF_NY = 'birds-of-ny',
-  SURPRISE_ENCOUNTER = '2024-surprise-encounter',
   CAFE_SERIES = '2024-cafe-series',
   CLOTHING = 'clothing',
-  MOKUHANGA = '2025-mokuhanga',
 
   // tbd
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
 
   // done
+  ANIMAL_WORLD_2024 = '2024-animal-world',
   GSHI_2022 = '2022-gshi',
   INTERIORS_2023 = '2023-interiors',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
+  MOKUHANGA = '2025-mokuhanga',
   MT_GRETNA_2023 = '2023-mt-gretna',
   OAXACA_2022 = '2022-oaxaca',
   PAROS_2022 = '2022-paros',
+  BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   PETS = 'pets',
 }
 
@@ -131,10 +129,6 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     title: '2024 Animal world',
     description: 'This is Project C.',
   },
-  [ProjectNamesEnum.SURPRISE_ENCOUNTER]: {
-    title: '2024 Surprise encounter',
-    description: 'This is Project D.',
-  },
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: {
     title: 'Works on cardboard',
     description: 'This is Project E.',
@@ -147,8 +141,8 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     title: '2022 GSHI',
     description: 'This is Project G.',
   },
-  [ProjectNamesEnum.BIRDS_OF_NY]: {
-    title: 'Birds of NY',
+  [ProjectNamesEnum.BIRDS_OF_NY_2023]: {
+    title: '2023 Birds of NY',
     description: 'This is Project G.',
   },
   [ProjectNamesEnum.PETS]: {
@@ -312,19 +306,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'A flash of light',
     },
   ],
-  [ProjectNamesEnum.SURPRISE_ENCOUNTER]: [
-    {
-      available: true,
-      date: '2024-01-01',
-      description: 'This is Artwork D.',
-      dimensions: '100 x 100 cm',
-      image: '/images/artwork-d.jpg',
-      medium: 'Oil on canvas',
-      notes: 'This is a note.',
-      cost: 400, // idk
-      title: 'Artwork D',
-    },
-  ],
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: [
     {
       date: '2023-09-11',
@@ -424,7 +405,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
   ],
-  [ProjectNamesEnum.BIRDS_OF_NY]: [
+  [ProjectNamesEnum.BIRDS_OF_NY_2023]: [
     {
       image: '/nyc/2022-12-1-tufted-titmouse.jpg',
       title: 'Tufted titmouse',
