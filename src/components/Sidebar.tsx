@@ -47,6 +47,9 @@ export const Sidebar = () => {
         <a href='/project/2020-marcias-ranch' className='block hover:underline'>
           2020 Marcias Ranch
         </a>
+        <a href='/project/pets' className='block hover:underline'>
+          Pets
+        </a>
 
         <div className='bg-gray-600 w-full h-px my-2'></div>
         <p className='font-medium'>Silly sites</p>
