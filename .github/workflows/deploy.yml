@@ -37,6 +37,8 @@ jobs:
           cache: 'yarn'
       # - name: Install dependencies
       #   run: yarn ci
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
       - name: Build
         run: yarn run build
       - name: Setup Pages
