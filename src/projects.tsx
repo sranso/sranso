@@ -107,6 +107,7 @@ export type Artwork = {
   dimensions?: string;
   image: string;
   medium: string;
+  // notes are internal, not for sharing
   notes?: string;
   title: string;
   cost?: number;
