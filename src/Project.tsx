@@ -18,7 +18,7 @@ export function Project() {
   return (
     <main className='flex-1 p-6 md:ml-64'>
       {project.description && (
-        <div className='max-w-7xl mx-auto'>{project.description}</div>
+        <div className='max-w-3xl '>{project.description}</div>
       )}
       <div className='max-w-7xl mx-auto'>
         <Gallery artworks={artworks} />

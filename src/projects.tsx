@@ -136,12 +136,40 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   },
   [ProjectNamesEnum.MOKUHANGA]: {
     title: '2025 Mokuhanga',
+    description: (
+      <p>
+        Mokuhanga is a Japanese art form that uses a unique style of
+        printmaking. The weekend of June 5-6 2025 I took a Mokuhanga print
+        workshop at @zeamaysprintmaking and I loved it. It's an art form I have
+        admired for a while now, first really learning about it at
+        @kentlerdrawing when they had a Mokuhanga Sisters exhibition. I since
+        got & read @aprilvollmer_artist's book, and finally signed up for a
+        class.
+        <br />
+        <br />
+        This is the beginning of experimenting with the technique, stay tuned.
+      </p>
+    ),
   },
   [ProjectNamesEnum.CAFE_SERIES]: {
     title: '2024 Cafe series',
   },
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: {
     title: '2024 Animal world',
+    description: (
+      <p>
+        I've always been drawn to animals. As another animal myself, I feel a
+        lot of empathy for them and believe that we are all in this life
+        together. There is much to learn from other animals, whether it's about
+        family, expressing emotion, or using what's in front of us to create and
+        survive.
+        <br />
+        <br />
+        These sketches are the beginning of a project that is not yet finished.
+        It's a story about being human, through the simpler and more tender form
+        of other animals.
+      </p>
+    ),
   },
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: {
     title: 'Works on cardboard',
@@ -169,6 +197,17 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   },
   [ProjectNamesEnum.INTERIORS_2023]: {
     title: 'Interiors',
+    description: (
+      <p>
+        For six months in 2023 I lived in my friends' basement while I was
+        coming down from my year off of art, and looking for a job. One of the
+        beautiful things about living with friends as an adult is you get to see
+        what their lives look like in the quiet and downtimes.
+        <br />
+        <br />I painted some interiors of their home, which is a beautiful house
+        with a lot of character.
+      </p>
+    ),
   },
 };
 
