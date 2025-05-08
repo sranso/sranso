@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { Artworks, ProjectNamesEnum, Projects } from './projects';
+import { Artworks, ProjectNamesEnum, Projects } from './projects.tsx';
 import { Gallery } from './components/Gallery';
 
 export function Project() {

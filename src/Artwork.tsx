@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { Artworks, getArtworkPath, ProjectNamesEnum } from './projects';
+import { Artworks, getArtworkPath, ProjectNamesEnum } from './projects.tsx';
 
 export function Artwork() {
   const { projectName, artwork: artworkParam } = useParams<{

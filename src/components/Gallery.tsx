@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Artwork, getArtworkPath } from '../projects';
+import { Artwork, getArtworkPath } from '../projects.tsx';
 
 export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
   const navigate = useNavigate();
