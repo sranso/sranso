@@ -3,6 +3,8 @@ import { Home } from './Home';
 import { About } from './About';
 import { Artwork } from './Artwork';
 import { Project } from './Project';
+import { NotFound } from './NotFound';
+
 export function App() {
   return (
     <>
@@ -11,6 +13,7 @@ export function App() {
         <Route path='/about' element={<About />} />
         <Route path='/project/:projectName' element={<Project />} />
         <Route path='/project/:projectName/:artwork' element={<Artwork />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
   );
