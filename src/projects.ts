@@ -115,23 +115,23 @@ export type Artwork = {
 export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.CLOTHING]: {
     title: 'Painted clothing',
-    description: (
-      <p>
-        Painting clothes has been a fun way to upcycle clothing (eg shirt with a
-        stain gets a new life) and materials (eg a fitted sheet my cats ruined
-        can be a tied tube top). I have enjoyed experimenting with different
-        types of canvases and shapes, and finding new ways to give paintings air
-        time in the world. If you're interested in a painted item,{' '}
-        <a
-          target='_blank'
-          rel='noopener noreferrer'
-          className='inline underline'
-          href='https://docs.google.com/forms/d/e/1FAIpQLSeUhhHO-ChppMtT4jyYvOxfn0_a4tw4CEYX2omY0iUHFRgiwg/viewform'
-        >
-          fill out this form.
-        </a>
-      </p>
-    ),
+    // description: (
+    //   <p>
+    //     Painting clothes has been a fun way to upcycle clothing (eg shirt with a
+    //     stain gets a new life) and materials (eg a fitted sheet my cats ruined
+    //     can be a tied tube top). I have enjoyed experimenting with different
+    //     types of canvases and shapes, and finding new ways to give paintings air
+    //     time in the world. If you're interested in a painted item,{' '}
+    //     <a
+    //       target='_blank'
+    //       rel='noopener noreferrer'
+    //       className='inline underline'
+    //       href='https://docs.google.com/forms/d/e/1FAIpQLSeUhhHO-ChppMtT4jyYvOxfn0_a4tw4CEYX2omY0iUHFRgiwg/viewform'
+    //     >
+    //       fill out this form.
+    //     </a>
+    //   </p>
+    // ),
   },
   [ProjectNamesEnum.MOKUHANGA]: {
     title: '2025 Mokuhanga',
