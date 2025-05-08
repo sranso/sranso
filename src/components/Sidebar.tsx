@@ -14,6 +14,9 @@ export const Sidebar = () => {
 
       <nav className='space-y-1'>
         <p className='font-medium'>Projects</p>
+        <a href='/project/clothing' className='block hover:underline'>
+          Painted clothing
+        </a>
         <a href='/project/2025-mokuhanga' className='block hover:underline'>
           2025 Mokuhanga
         </a>

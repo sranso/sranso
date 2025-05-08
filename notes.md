@@ -1,7 +1,7 @@
 - add descriptions
 - add 'next' projects
 
-- clothing
+- clay painting
 - pre 2022 ? just dump it all together ?
 - works on cardboard ?
 - coffee drawings ?

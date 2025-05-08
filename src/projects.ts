@@ -1,12 +1,12 @@
 export const enum ProjectNamesEnum {
   CAFE_SERIES = '2024-cafe-series',
-  CLOTHING = 'clothing',
 
   // tbd
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
 
   // done
   ANIMAL_WORLD_2024 = '2024-animal-world',
+  CLOTHING = 'clothing',
   GSHI_2022 = '2022-gshi',
   INTERIORS_2023 = '2023-interiors',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
@@ -98,13 +98,13 @@ const roseSeries: Artwork[] = [
  */
 export type Project = {
   title: string;
-  description: string;
+  description?: string;
 };
 export type Artwork = {
   available?: boolean;
   date: string;
   description?: string;
-  dimensions: string;
+  dimensions?: string;
   image: string;
   medium: string;
   notes?: string;
@@ -114,56 +114,43 @@ export type Artwork = {
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.CLOTHING]: {
-    title: 'Clothing',
-    description: 'This is Project A.',
+    title: 'Painted clothing',
   },
   [ProjectNamesEnum.MOKUHANGA]: {
     title: '2025 Mokuhanga',
-    description: 'This is Project A.',
   },
   [ProjectNamesEnum.CAFE_SERIES]: {
     title: '2024 Cafe series',
-    description: 'This is Project B.',
   },
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: {
     title: '2024 Animal world',
-    description: 'This is Project C.',
   },
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: {
     title: 'Works on cardboard',
-    description: 'This is Project E.',
   },
   [ProjectNamesEnum.MT_GRETNA_2023]: {
     title: '2023 Mt Gretna',
-    description: 'This is Project F.',
   },
   [ProjectNamesEnum.GSHI_2022]: {
     title: '2022 GSHI',
-    description: 'This is Project G.',
   },
   [ProjectNamesEnum.BIRDS_OF_NY_2023]: {
     title: '2023 Birds of NY',
-    description: 'This is Project G.',
   },
   [ProjectNamesEnum.PETS]: {
     title: 'Pets',
-    description: 'This is Project H.',
   },
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: {
     title: 'Marcias Ranch 2020',
-    description: 'This is Project I.',
   },
   [ProjectNamesEnum.OAXACA_2022]: {
     title: 'Oaxaca 2022',
-    description: 'This is Project J.',
   },
   [ProjectNamesEnum.PAROS_2022]: {
     title: 'Paros 2022',
-    description: 'This is Project K.',
   },
   [ProjectNamesEnum.INTERIORS_2023]: {
     title: 'Interiors',
-    description: 'This is Project L.',
   },
 };
 
@@ -942,7 +929,67 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-04',
     },
   ],
-  [ProjectNamesEnum.CLOTHING]: [],
+  [ProjectNamesEnum.CLOTHING]: [
+    {
+      image: '/clothing/2025-landscape-shorts.jpeg',
+      title: 'Chickens on the farm',
+      medium: 'acrylic on shorts',
+      available: true,
+      cost: 225,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-lilies.jpeg',
+      title: 'Lilies',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-peacock.jpeg',
+      title: 'Peacock',
+      medium: 'acrylic on torn linen bedsheet',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-rinad.jpeg',
+      title: 'Sunflowers and tomatoes',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-seth.jpeg',
+      title: 'France, landscapes, and cocktails',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-first-one.jpeg',
+      title: 'Fruits and flowers',
+      medium: 'acrylic on shirt',
+
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-jacob-flowers.jpeg',
+      title: 'Flowers and France',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      image: '/clothing/2025-cats-bar.jpeg',
+      title: 'Cats at the bar',
+      medium: 'acrylic on shirt',
+
+      available: false,
+      date: '2025-03-01',
+    },
+  ],
 };
 
 export const getArtworkPath = (artwork: Artwork) => {
@@ -1096,7 +1143,7 @@ const iPad: Artwork[] = [
     image: '/paros-greece/2022-2-9-bowl.png',
     title: 'Untitled, 2022',
     medium: 'iPad',
-    dimensions: 'n/a',
+
     available: false,
     date: '2022-02-09',
     notes:
@@ -1106,7 +1153,7 @@ const iPad: Artwork[] = [
     image: '/nc/2021-12-27.png',
     title: "Mom and dad's back yard, 2021",
     medium: 'iPad',
-    dimensions: 'n/a',
+
     available: false,
     date: '2021-12-27',
   },
@@ -1114,7 +1161,7 @@ const iPad: Artwork[] = [
     image: '/canada/2021-11-17-canada.jpg',
     title: 'Untitled, 2021',
     medium: 'iPad',
-    dimensions: 'n/a',
+
     available: false,
     date: '2021-11-17',
   },
@@ -1122,7 +1169,7 @@ const iPad: Artwork[] = [
     image: '/canada/2021-11-17-canada.jpg',
     title: 'Untitled, 2021',
     medium: 'iPad',
-    dimensions: 'n/a',
+
     available: false,
     date: '2021-11-17',
   },
@@ -1130,7 +1177,7 @@ const iPad: Artwork[] = [
     image: '/marcias-ranch/2021-11-15-Holly.jpg',
     title: 'Hollyhocks, 2021',
     medium: 'iPad',
-    dimensions: 'n/a',
+
     available: false,
     date: '2021-11-15',
   },
