@@ -20,9 +20,9 @@ export const Sidebar = () => {
         <a href='/project/2025-mokuhanga' className='block hover:underline'>
           2025 Mokuhanga
         </a>
-        {/* <a href='/project/2024-cafe-series' className='block hover:underline'>
+        <a href='/project/2024-cafe-series' className='block hover:underline'>
           2024 Cafe series
-        </a> */}
+        </a>
         <a href='/project/2024-animal-world' className='block hover:underline'>
           2024 Animal world
         </a>
