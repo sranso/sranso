@@ -1,11 +1,10 @@
+import { Gallery } from './components/Gallery';
+import { homepageArtworks } from './projects';
+
 export function Home() {
   return (
     <main className='flex-1 p-6 md:ml-64'>
-      <div className='w-full mx-auto'>
-        <div className='h-[800px]'>
-          <img src='/mokuhanga/2025-04-05-xena.jpg' alt='Xena the seal' />
-        </div>
-      </div>
+      <Gallery artworks={homepageArtworks} />
     </main>
   );
 }
