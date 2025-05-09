@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Artwork, getArtworkPath } from '../projects';
+import { Artwork, getArtworkPath, ProjectNamesEnum } from '../projects';
 
 export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
   const navigate = useNavigate();
@@ -11,7 +11,14 @@ export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
             key={i}
             className='hover:cursor-pointer w-full rounded-xl object-cover break-inside-avoid'
             onClick={() => {
-              navigate(getArtworkPath(artwork, artwork.project));
+              navigate(
+                getArtworkPath(
+                  artwork,
+                  'project' in artwork
+                    ? (artwork.project as ProjectNamesEnum)
+                    : undefined
+                )
+              );
             }}
           >
             <img src={artwork.image} alt={artwork.title} />

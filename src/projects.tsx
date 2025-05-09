@@ -1255,7 +1255,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
 };
 
 export const getArtworkPath = (
-  artwork: Artwork,
+  artwork: Artwork | HomepageArtwork,
   project?: ProjectNamesEnum
 ) => {
   return `${project ? `project/${project}/` : ''}${artwork.date}-${artwork.title
