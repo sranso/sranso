@@ -126,8 +126,8 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         Painting clothes has been a fun way to upcycle clothing (eg shirt with a
         stain gets a new life) and materials (eg a fitted sheet my cats ruined
         can be a tied top). I have enjoyed the opportunity to experiment with
-        different types of canvas shapes, and to find new ways to give paintings
-        air time in the world.
+        different canvas shapes, and to find new ways to give paintings air time
+        in the world.
         <br />
         <br />
         🌸🌸🌸 If you're interested in a painted item,{' '}
