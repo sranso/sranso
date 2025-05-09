@@ -120,9 +120,9 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
       <p>
         Painting clothes has been a fun way to upcycle clothing (eg shirt with a
         stain gets a new life) and materials (eg a fitted sheet my cats ruined
-        can be a tied tube top). I have enjoyed experimenting with different
-        types of canvases and shapes, and finding new ways to give paintings air
-        time in the world. If you're interested in a painted item,{' '}
+        can be a tied top). I have enjoyed the opportunity to experiment with
+        different types of canvas shapes, and to find new ways to give paintings
+        air time in the world. If you're interested in a painted item,{' '}
         <a
           target='_blank'
           rel='noopener noreferrer'
@@ -153,6 +153,17 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   },
   [ProjectNamesEnum.CAFE_SERIES]: {
     title: '2024 Cafe series',
+    description: (
+      <p>
+        During 2023-2024, I spent a good bit of time working at cafes in
+        Brooklyn NY because I was working remotely and living alone with two
+        cats. Basically, I felt pretty isolated and wanted to be around people
+        and outside of my house. There is an interesting aspect of cafes in that
+        they are meant to create a space and a mood while serving food and
+        drinks that nourish us. I wanted to show that in these paintings, and
+        hint at the community that I was missing when I could.
+      </p>
+    ),
   },
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: {
     title: '2024 Animal world',
@@ -176,24 +187,124 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   },
   [ProjectNamesEnum.MT_GRETNA_2023]: {
     title: '2023 Mt Gretna',
+    description: (
+      <p>
+        For six weeks in the summer of 2023, I was a resident at the{' '}
+        <a href='https://www.mgsoa.org/' target='_blank'>
+          Mount Gretna School of Art.
+        </a>{' '}
+        It was a quiet and reflective time, and through converstations with the
+        visiting artists and students who were there (in a parallel but separate
+        program), I learned a lot about color, mixing, and intention. I am still
+        reflecting on and learning from my time there, and am immensely grateful
+        for the community of artists I now know.
+      </p>
+    ),
   },
   [ProjectNamesEnum.GSHI_2022]: {
     title: '2022 GSHI',
+    description: (
+      <p>
+        In 2022 I was fortunate to attend{' '}
+        <a
+          href='https://maineartsjournal.com/anina-porter-fuller-great-spruce-head-island-art-week-1993-present/'
+          target='_blank'
+          className='underline'
+        >
+          Great Spruce Head Island Art Week
+        </a>
+        , a week-long residency with 11 other artists at Fairfield Porter's
+        family home in Maine. This was a top five life experience. The island
+        was full of beauty and potential, and I realized how much I love making
+        art alongside others.
+        <br />
+        <br />
+        For the first time, I made large watercolors (18x24"). Previously, I had
+        only worked small out of timidity, but another artist there had the
+        large Arches blocks and encouraged me to try. I got to play with large,
+        bold strokes of color, and it freed me to play more in this way.
+      </p>
+    ),
   },
   [ProjectNamesEnum.BIRDS_OF_NY_2023]: {
     title: '2023 Birds of NY',
+    description: (
+      <p>
+        One of my best friends and her husband have a home in Red Hook, NY. Her
+        husband loves birds and asked if I would paint six of the birds he often
+        sees in that area. This was a very enjoyable project and I love how they
+        look as a group, with the branches going off the paper and connecting to
+        the other images.
+      </p>
+    ),
   },
   [ProjectNamesEnum.PETS]: {
     title: 'Pets',
+    description: (
+      <p>
+        What can I say? I love animals. They are a delight to be around and to
+        paint. I have done some pet portraits over the years and it's always fun
+        to find a way to communicate their personality.
+      </p>
+    ),
   },
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: {
     title: 'Marcias Ranch 2020',
+    description: (
+      <p>
+        In the summer between my junior and senior year of college, I worked as
+        a gallery assistant at{' '}
+        <a
+          href='https://www.artlacuna.com/'
+          target='_blank'
+          className='underline'
+        >
+          Marcia Burtt's gallery
+        </a>
+        . She and I kept in touch and during the pandemic, I lived with her at
+        her ranch in Santa Maria, CA, working during the day and painting at
+        night. She is a master of color and acrylic painting, and with her
+        guidance I learned about color, painting shapes rather than lines, and
+        falling in love with what you see.
+      </p>
+    ),
   },
   [ProjectNamesEnum.OAXACA_2022]: {
     title: 'Oaxaca 2022',
+    description: (
+      <p>
+        I spent 3 months in Oaxaca, Mexico in 2022 because I wanted to live
+        somewhere that had studios for rent, and where art was part of the
+        community. I spent much of my time at Temenk gallery, speaking Spanish
+        and learning more about etching with the people who worked there.
+      </p>
+    ),
   },
   [ProjectNamesEnum.PAROS_2022]: {
     title: 'Paros 2022',
+    description: (
+      <p>
+        Between my sophomore and junior year of college, I took a year off to
+        study art at{' '}
+        <a
+          href='https://www.aegeancenter.com/'
+          target='_blank'
+          className='underline'
+        >
+          The Aegean Center of Fine Arts
+        </a>
+        . It was the first time I really loved learning, and I found great joy
+        in learning how to paint and draw, in the philosophy of art. This is one
+        of the most important decisions I have made in my life, and I have my
+        mom to thank for encouraging me to do it.
+        <br />
+        <br />
+        In 2022, I asked Jane (the painting teacher) if I could come do a
+        residency with her for 3 months. You can see that I was looking to
+        artists like Morandi, Cezanne, and Durher for skill and answers to
+        questions.
+      </p>
+    ),
   },
   [ProjectNamesEnum.INTERIORS_2023]: {
     title: 'Interiors',
@@ -273,6 +384,15 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       cost: 240,
       date: '2024-02-24',
+    },
+    {
+      image: '/nyc/2024-03-10-frankels.jpeg',
+      title: 'Frankels',
+      medium: 'oil on cardboard',
+      dimensions: '9x12"',
+      available: true,
+      cost: 150,
+      date: '2024-03-10',
     },
   ],
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: [
@@ -571,22 +691,6 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'iPad',
     },
     {
-      image: '/nyc/2021-12-25.jpg',
-      title: 'Miso',
-      medium: 'iPad',
-      available: false,
-      date: '2021-12-25',
-      dimensions: 'iPad',
-    },
-    {
-      image: '/nyc/2021-12-24-xena.jpg',
-      title: 'Xena',
-      medium: 'iPad',
-      available: false,
-      date: '2021-12-24',
-      dimensions: 'iPad',
-    },
-    {
       image: '/pets/2021-12-6-jerry.png',
       title: 'Jerry',
       medium: 'iPad',
@@ -625,6 +729,38 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '3x4"',
       available: false,
       date: '2020-09-05',
+    },
+    {
+      image: '/nyc/2021-12-25.jpg',
+      title: 'Miso',
+      medium: 'iPad',
+      available: false,
+      date: '2021-12-25',
+      dimensions: 'iPad',
+    },
+    {
+      image: '/nyc/2021-12-24-xena.jpg',
+      title: 'Xena',
+      medium: 'iPad',
+      available: false,
+      date: '2021-12-24',
+      dimensions: 'iPad',
+    },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      image: '/mokuhanga/2025-04-05-cat-flower.jpg',
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Miso being bad',
+    },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      image: '/mokuhanga/2025-04-05-xena.jpg',
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Xena the seal',
     },
   ],
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: [
