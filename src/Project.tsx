@@ -17,8 +17,11 @@ export function Project() {
 
   return (
     <main className='flex-1 p-6 md:ml-64'>
+      <p className='text-md font-medium'>{project.title}</p>
       {project.description && (
-        <div className='max-w-3xl '>{project.description}</div>
+        <div className='max-w-3xl text-gray-800 mt-2'>
+          {project.description}
+        </div>
       )}
       <div className='max-w-7xl mx-auto'>
         <Gallery artworks={artworks} />

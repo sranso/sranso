@@ -1,3 +1,5 @@
+import { ProjectNamesEnum } from '../projects';
+
 export const Sidebar = () => {
   return (
     <aside className='w-full md:w-64 p-6 md:fixed md:h-screen md:border-r border-gray-300 text-sm leading-relaxed'>
@@ -14,16 +16,28 @@ export const Sidebar = () => {
 
       <nav className='space-y-1'>
         <p className='font-medium'>Projects</p>
-        <a href='/project/clothing' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.CLOTHING}`}
+          className='block hover:underline'
+        >
           Painted clothing
         </a>
-        <a href='/project/2025-mokuhanga' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.MOKUHANGA}`}
+          className='block hover:underline'
+        >
           2025 Mokuhanga
         </a>
-        <a href='/project/2024-cafe-series' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.CAFE_SERIES}`}
+          className='block hover:underline'
+        >
           2024 Cafe series
         </a>
-        <a href='/project/2024-animal-world' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.ANIMAL_WORLD_2024}`}
+          className='block hover:underline'
+        >
           2024 Animal world
         </a>
         {/* <a
@@ -32,29 +46,59 @@ export const Sidebar = () => {
         >
           2024 Surprise encounter
         </a> */}
-        <a href='/project/2023-interiors' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.INTERIORS_2023}`}
+          className='block hover:underline'
+        >
           2023 Interiors
         </a>
-        <a href='/project/2023-mt-gretna' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.MT_GRETNA_2023}`}
+          className='block hover:underline'
+        >
           2023 Mt Gretna
         </a>
-        <a href='/project/2023-birds-of-ny' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.BIRDS_OF_NY_2023}`}
+          className='block hover:underline'
+        >
           2023 Birds of NY
         </a>
-        <a href='/project/2022-gshi' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.GSHI_2022}`}
+          className='block hover:underline'
+        >
           2022 Great Spruce Head Island
         </a>
-        <a href='/project/2022-oaxaca' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.OAXACA_2022}`}
+          className='block hover:underline'
+        >
           2022 Oaxaca
         </a>
-        <a href='/project/2022-paros' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.PAROS_2022}`}
+          className='block hover:underline'
+        >
           2022 Paros
         </a>
-        <a href='/project/2020-marcias-ranch' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.MARCIAS_RANCH_2020}`}
+          className='block hover:underline'
+        >
           2020 Marcias Ranch
         </a>
-        <a href='/project/pets' className='block hover:underline'>
+        <a
+          href={`/project/${ProjectNamesEnum.PETS}`}
+          className='block hover:underline'
+        >
           Pets
+        </a>
+        <a
+          href={`/project/${ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS}`}
+          className='block hover:underline'
+        >
+          Illustrations & Cartoons
         </a>
 
         <div className='bg-gray-600 w-full h-px my-2'></div>

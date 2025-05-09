@@ -35,13 +35,31 @@ export function Artwork() {
               className='mb-4 max-w-11/12 mx-auto max-h-full'
             />
           </div>
-          <div className='min-w-36 mt-8 shrink-0 mr-6'>
+          <div className='min-w-36 mt-8 shrink-0 mr-6 text-wrap max-w-60'>
             <p className='italic'>{artwork.title}</p>
-            <p>{artwork.medium}</p>
-            <p>{artwork.dimensions}</p>
-            <p>{artwork.date}</p>
-            <p>{artwork.available ? 'Available' : 'Not available'}</p>
-            {artwork.cost && <p>Cost: ${artwork.cost}</p>}
+            <p className='text-gray-700 mt-1'>{artwork.medium}</p>
+            {artwork.dimensions && (
+              <p className=' text-gray-700'>{artwork.dimensions}</p>
+            )}
+            {artwork.href && (
+              <p>
+                <a
+                  href={artwork.href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-blue-500 underline'
+                >
+                  View the piece
+                </a>
+              </p>
+            )}
+            <p className='text-gray-700'>{artwork.date}</p>
+            <p className='text-gray-700'>
+              {artwork.available ? 'Available' : 'Not available'}
+            </p>
+            {artwork.cost && (
+              <p className='text-gray-700'>Cost: ${artwork.cost}</p>
+            )}
             {artwork.available && (
               <a
                 target='_blank'
@@ -50,6 +68,11 @@ export function Artwork() {
               >
                 Email to purchase
               </a>
+            )}
+            {artwork.description && (
+              <p className='mt-3 text-sm text-gray-700'>
+                {artwork.description}
+              </p>
             )}
           </div>
         </div>

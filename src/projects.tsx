@@ -16,6 +16,7 @@ export const enum ProjectNamesEnum {
   PAROS_2022 = '2022-paros',
   BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   PETS = 'pets',
+  ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
 }
 
 const roseSeries: Artwork[] = [
@@ -105,6 +106,7 @@ export type Artwork = {
   date: string;
   description?: string;
   dimensions?: string;
+  href?: string;
   image: string;
   medium: string;
   // notes are internal, not for sharing
@@ -114,6 +116,9 @@ export type Artwork = {
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
+  [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: {
+    title: 'Illustrations & Cartoons',
+  },
   [ProjectNamesEnum.CLOTHING]: {
     title: 'Painted clothing',
     description: (
@@ -202,7 +207,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     ),
   },
   [ProjectNamesEnum.GSHI_2022]: {
-    title: '2022 GSHI',
+    title: '2022 Great Spruce Head Island Art Week',
     description: (
       <p>
         In 2022 I was fortunate to attend{' '}
@@ -249,7 +254,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     ),
   },
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: {
-    title: 'Marcias Ranch 2020',
+    title: '2020 Marcias Ranch',
     description: (
       <p>
         In the summer between my junior and senior year of college, I worked as
@@ -270,7 +275,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     ),
   },
   [ProjectNamesEnum.OAXACA_2022]: {
-    title: 'Oaxaca 2022',
+    title: '2022 Oaxaca',
     description: (
       <p>
         I spent 3 months in Oaxaca, Mexico in 2022 because I wanted to live
@@ -281,7 +286,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     ),
   },
   [ProjectNamesEnum.PAROS_2022]: {
-    title: 'Paros 2022',
+    title: '2022 Paros',
     description: (
       <p>
         Between my sophomore and junior year of college, I took a year off to
@@ -307,7 +312,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     ),
   },
   [ProjectNamesEnum.INTERIORS_2023]: {
-    title: 'Interiors',
+    title: '2023 Interiors',
     description: (
       <p>
         For six months in 2023 I lived in my friends' basement while I was
@@ -323,6 +328,78 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 };
 
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
+  [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: [
+    {
+      image: '/illustrations/2024-book-rats.jpg',
+      title: 'Book rats',
+      medium: 'pen and digital color',
+      dimensions: '2x6"',
+      description: "Bookmark for my best friend's book club",
+      available: false,
+      date: '2024-11-01',
+    },
+    {
+      image: '/illustrations/fish-in-the-sea-2018.jpg',
+      title:
+        'Daily Shout for The New Yorker – A sampling of the many fish in the sea',
+      medium: 'watercolor',
+      available: false,
+      date: '2018-01-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/a-sampling-of-the-many-fish-in-the-sea',
+    },
+    {
+      image: '/illustrations/things-a-startup-has-instead-hr.jpg',
+      title:
+        'Daily Shout for The New Yorker – Things a startup has instead of HR',
+      medium: 'watercolor',
+      available: false,
+      date: '2018-01-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/things-a-startup-has-instead-of-hr',
+    },
+    {
+      image: '/illustrations/water-towers-2018.jpg',
+      title:
+        'Daily Shout for The New Yorker - Water towers that could hold my tears',
+      medium: 'watercolor',
+      available: false,
+      date: '2018-01-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/water-towers-that-could-hold-my-tears',
+    },
+    {
+      image: '/illustrations/2018-10-greg-microdoses.jpg',
+      title: 'Cartoon for The New Yorker - Greg microdoses',
+      medium: 'pen and ink on paper',
+      available: false,
+      date: '2018-10-01',
+      href: 'https://condenaststore.com/featured/gods-elbow-sarah-ransohoff.html',
+    },
+    {
+      image: '/illustrations/meditation-retreat-squirrel-18.gif',
+      title:
+        'Daily Shout for The New Yorker - Main forms of entertainment on a meditation retreat',
+      medium: 'watercolor and iPad',
+      available: false,
+      date: '2018-10-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/main-forms-of-entertainment-on-a-meditation-retreat',
+    },
+    {
+      image: '/illustrations/owl-wisdom-2019.jpg',
+      title: 'Daily Shout for The New Yorker - Owl wisdom',
+      medium: 'watercolor and iPad',
+      available: false,
+      date: '2019-01-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/owl-wisdom',
+    },
+    {
+      image: '/illustrations/2023-meat-alts.jpg',
+      title:
+        'Daily Shout for The New Yorker - Super realistic meat alternatives',
+      medium: 'watercolor and iPad',
+      available: false,
+      date: '2023-01-01',
+      href: 'https://www.newyorker.com/humor/daily-shouts/super-realistic-meat-alternatives',
+    },
+  ],
   [ProjectNamesEnum.MOKUHANGA]: [
     {
       available: true,
@@ -672,7 +749,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2023-01-31',
-      dimensions: 'iPad',
+      dimensions: 'n/a',
     },
     {
       image: '/pets/2023-01-31-Ethan.jpg',
@@ -680,7 +757,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2023-01-31',
-      dimensions: 'iPad',
+      dimensions: 'n/a',
     },
     {
       image: '/pets/2022-5-Dean.jpg',
@@ -688,7 +765,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2022-05-01',
-      dimensions: 'iPad',
+      dimensions: 'n/a',
     },
     {
       image: '/pets/2021-12-6-jerry.png',
@@ -696,7 +773,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2021-12-06',
-      dimensions: 'iPad',
+      dimensions: 'n/a',
     },
     {
       image: '/pets/2020-brisket.jpg',
@@ -736,7 +813,8 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2021-12-25',
-      dimensions: 'iPad',
+
+      dimensions: 'n/a',
     },
     {
       image: '/nyc/2021-12-24-xena.jpg',
@@ -744,7 +822,8 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'iPad',
       available: false,
       date: '2021-12-24',
-      dimensions: 'iPad',
+
+      dimensions: 'n/a',
     },
     {
       available: true,
