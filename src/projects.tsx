@@ -127,15 +127,19 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         stain gets a new life) and materials (eg a fitted sheet my cats ruined
         can be a tied top). I have enjoyed the opportunity to experiment with
         different types of canvas shapes, and to find new ways to give paintings
-        air time in the world. If you're interested in a painted item,{' '}
+        air time in the world.
+        <br />
+        <br />
+        🌸🌸🌸 If you're interested in a painted item,{' '}
         <a
           target='_blank'
           rel='noopener noreferrer'
-          className='inline underline'
+          className='inline text-blue-500 underline'
           href='https://docs.google.com/forms/d/e/1FAIpQLSeUhhHO-ChppMtT4jyYvOxfn0_a4tw4CEYX2omY0iUHFRgiwg/viewform'
         >
           fill out this form.
-        </a>
+        </a>{' '}
+        🌸🌸🌸
       </p>
     ),
   },
@@ -214,7 +218,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         <a
           href='https://maineartsjournal.com/anina-porter-fuller-great-spruce-head-island-art-week-1993-present/'
           target='_blank'
-          className='underline'
+          className='text-blue-500 underline'
         >
           Great Spruce Head Island Art Week
         </a>
@@ -262,7 +266,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         <a
           href='https://www.artlacuna.com/'
           target='_blank'
-          className='underline'
+          className='text-blue-500 underline'
         >
           Marcia Burtt's gallery
         </a>
@@ -294,7 +298,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         <a
           href='https://www.aegeancenter.com/'
           target='_blank'
-          className='underline'
+          className='text-blue-500 underline'
         >
           The Aegean Center of Fine Arts
         </a>
@@ -1408,7 +1412,6 @@ const iPad: Artwork[] = [
     image: '/paros-greece/2022-2-9-bowl.png',
     title: 'Untitled, 2022',
     medium: 'iPad',
-
     available: false,
     date: '2022-02-09',
     notes:
@@ -1418,7 +1421,6 @@ const iPad: Artwork[] = [
     image: '/nc/2021-12-27.png',
     title: "Mom and dad's back yard, 2021",
     medium: 'iPad',
-
     available: false,
     date: '2021-12-27',
   },
@@ -1426,7 +1428,6 @@ const iPad: Artwork[] = [
     image: '/canada/2021-11-17-canada.jpg',
     title: 'Untitled, 2021',
     medium: 'iPad',
-
     available: false,
     date: '2021-11-17',
   },
@@ -1434,7 +1435,6 @@ const iPad: Artwork[] = [
     image: '/canada/2021-11-17-canada.jpg',
     title: 'Untitled, 2021',
     medium: 'iPad',
-
     available: false,
     date: '2021-11-17',
   },
@@ -1442,7 +1442,6 @@ const iPad: Artwork[] = [
     image: '/marcias-ranch/2021-11-15-Holly.jpg',
     title: 'Hollyhocks, 2021',
     medium: 'iPad',
-
     available: false,
     date: '2021-11-15',
   },
