@@ -27,7 +27,7 @@ export function Artwork() {
   return (
     <>
       <main className='flex-1 p-6 md:ml-64 h-full'>
-        <div className='flex gap-4 justify-between h-full'>
+        <div className='flex md:flex-row flex-col gap-4 justify-between h-full'>
           <div className='max-h-[40rem] grow'>
             <img
               src={artwork.image}
@@ -35,7 +35,7 @@ export function Artwork() {
               className='mb-4 max-w-11/12 mx-auto max-h-full'
             />
           </div>
-          <div className='min-w-36 mt-8 shrink-0 mr-6 text-wrap max-w-60'>
+          <div className='min-w-36 md:mt-8 shrink-0 mr-6 text-wrap max-w-60'>
             <p className='italic'>{artwork.title}</p>
             <p className='text-gray-700 mt-1'>{artwork.medium}</p>
             {artwork.dimensions && (
