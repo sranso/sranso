@@ -1254,8 +1254,11 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
 };
 
-export const getArtworkPath = (artwork: Artwork) => {
-  return `${artwork.date}-${artwork.title
+export const getArtworkPath = (
+  artwork: Artwork,
+  project?: ProjectNamesEnum
+) => {
+  return `${project ? `project/${project}/` : ''}${artwork.date}-${artwork.title
     .toLowerCase()
     .replace(/ /g, '-')
     .replace(/,/g, '-')
@@ -1445,7 +1448,10 @@ const iPad: Artwork[] = [
   },
 ];
 
-export const homepageArtworks: Artwork[] = [
+type HomepageArtwork = Artwork & {
+  project: ProjectNamesEnum;
+};
+export const homepageArtworks: HomepageArtwork[] = [
   {
     available: true,
     date: '2025-04-05',
@@ -1453,6 +1459,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/mokuhanga/2025-04-05-cat-flower.jpg',
     medium: 'watercolor on Rives BFK cream',
     title: 'Miso being bad',
+    project: ProjectNamesEnum.MOKUHANGA,
   },
   {
     available: true,
@@ -1461,6 +1468,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/mokuhanga/2025-04-05-xena.jpg',
     medium: 'watercolor on Rives BFK cream',
     title: 'Xena the seal',
+    project: ProjectNamesEnum.MOKUHANGA,
   },
   {
     available: false,
@@ -1469,6 +1477,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/mokuhanga/2025-04-05-chickens.jpg',
     medium: 'watercolor on Rives BFK cream',
     title: 'Chickens',
+    project: ProjectNamesEnum.MOKUHANGA,
   },
   {
     date: '2023-09-11',
@@ -1477,6 +1486,7 @@ export const homepageArtworks: Artwork[] = [
     title: 'Figs and bar tools',
     dimensions: '6x8"',
     available: false,
+    project: ProjectNamesEnum.WORKS_ON_CARDBOARD,
   },
   {
     date: '2023-09-10',
@@ -1486,6 +1496,7 @@ export const homepageArtworks: Artwork[] = [
     dimensions: '6x8"',
     available: true,
     cost: 125,
+    project: ProjectNamesEnum.WORKS_ON_CARDBOARD,
   },
   {
     image: '/nyc/2023-11-26.jpg',
@@ -1494,6 +1505,7 @@ export const homepageArtworks: Artwork[] = [
     dimensions: '40x26"',
     available: false,
     date: '2023-01-26',
+    project: ProjectNamesEnum.CAFE_SERIES,
   },
   {
     image: '/nyc/2024-02-08.jpeg',
@@ -1503,6 +1515,7 @@ export const homepageArtworks: Artwork[] = [
     available: true,
     cost: 240,
     date: '2024-02-08',
+    project: ProjectNamesEnum.CAFE_SERIES,
   },
   {
     available: true,
@@ -1511,6 +1524,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/2024-animal-world/24-deer-in-thicket.jpg',
     medium: 'pen and whiteout paper',
     title: 'Deer in thicket',
+    project: ProjectNamesEnum.ANIMAL_WORLD_2024,
   },
   {
     available: true,
@@ -1519,6 +1533,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/2024-animal-world/bear.jpg',
     medium: 'pen on paper',
     title: 'The wise bear',
+    project: ProjectNamesEnum.ANIMAL_WORLD_2024,
   },
   {
     available: true,
@@ -1527,6 +1542,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/2024-animal-world/community.jpg',
     medium: 'pen on paper',
     title: 'The infinite and the specific / Community',
+    project: ProjectNamesEnum.ANIMAL_WORLD_2024,
   },
   {
     available: true,
@@ -1535,6 +1551,7 @@ export const homepageArtworks: Artwork[] = [
     image: '/2024-animal-world/ghosts.jpg',
     medium: 'pen and whiteout on paper',
     title: 'Ghosts',
+    project: ProjectNamesEnum.ANIMAL_WORLD_2024,
   },
   {
     available: true,
@@ -1543,5 +1560,6 @@ export const homepageArtworks: Artwork[] = [
     image: '/2024-animal-world/hidden-bear.jpg',
     medium: 'pen and whiteout on paper',
     title: 'Hidden bear',
+    project: ProjectNamesEnum.ANIMAL_WORLD_2024,
   },
 ];

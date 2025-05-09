@@ -11,7 +11,7 @@ export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
             key={i}
             className='hover:cursor-pointer w-full rounded-xl object-cover break-inside-avoid'
             onClick={() => {
-              navigate(getArtworkPath(artwork));
+              navigate(getArtworkPath(artwork, artwork.project));
             }}
           >
             <img src={artwork.image} alt={artwork.title} />
