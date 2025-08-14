@@ -495,6 +495,64 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
 
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: [
+    // WIP -- do these go here?
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/2024-05-cats-in-apt.JPG'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/24-miso.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/24-moose.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/24-sketch-1.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/24-sketch-2.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/25-cow.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+    // {
+    //   available: true,
+    //   date: '2024-06-01',
+    //   dimensions: '8x5"',
+    //   images: ['/2024-animal-world/25-hannah-joey.jpg'],
+    //   medium: 'pen and whiteout paper',
+    //   title: 'Deer in thicket',
+    // },
+
     {
       available: true,
       date: '2024-06-01',
