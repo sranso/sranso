@@ -1233,7 +1233,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
 
   [ProjectNamesEnum.CLOTHING]: [
     {
-      images: ['/clothing/2025-landscape-shorts.jpeg'],
+      images: [
+        '/clothing/2025-shorts-front.jpeg',
+        '/clothing/2025-shorts-back.jpeg',
+      ],
       title: 'Chickens on the farm',
       medium: 'acrylic on shorts',
       available: true,
@@ -1241,51 +1244,21 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2025-03-01',
     },
     {
-      images: ['/clothing/2025-lilies.jpeg'],
+      images: [
+        '/clothing/2025-lilies-front.jpeg',
+        '/clothing/2025-lilies-back.jpeg',
+      ],
       title: 'Lilies',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
     },
     {
-      images: ['/clothing/2025-peacock.jpeg'],
-      title: 'Peacock',
-      medium: 'acrylic on torn linen bedsheet',
-      available: false,
-      date: '2025-03-01',
-    },
-    {
-      images: ['/clothing/2025-rinad.jpeg'],
+      images: [
+        '/clothing/2025-rinad-front.jpeg',
+        '/clothing/2025-rinad-back.jpeg',
+      ],
       title: 'Sunflowers and tomatoes',
-      medium: 'acrylic on shirt',
-      available: false,
-      date: '2025-03-01',
-    },
-    {
-      images: ['/clothing/2025-seth.jpeg'],
-      title: 'France, landscapes, and cocktails',
-      medium: 'acrylic on shirt',
-      available: false,
-      date: '2025-03-01',
-    },
-    {
-      images: ['/clothing/2025-first-one.jpeg'],
-      title: 'Fruits and flowers',
-      medium: 'acrylic on shirt',
-
-      available: false,
-      date: '2025-03-01',
-    },
-    {
-      images: ['/clothing/2025-jacob-flowers.jpeg'],
-      title: 'Flowers and France',
-      medium: 'acrylic on shirt',
-      available: false,
-      date: '2025-03-01',
-    },
-    {
-      images: ['/clothing/2025-cats-bar.jpeg'],
-      title: 'Cats at the bar',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
@@ -1301,19 +1274,70 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2025-05-01',
     },
     {
-      images: ['/clothing/25-conor-f.jpg', '/clothing/25-conor-b.jpg'],
-      title: "Conor's shirt – CA landscape",
-      medium: 'acrylic on shirt',
-      available: false,
-      date: '2025-06-01',
-    },
-    {
       images: ['/clothing/25-jlo-front.jpg', '/clothing/25-jlo-back.jpg'],
       title: "Kate's shirt – Jackruit and apples",
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-07-01',
       cost: 225,
+    },
+    {
+      images: ['/clothing/2025-peacock.jpeg'],
+      title: 'Peacock',
+      medium: 'acrylic on torn linen bedsheet',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      images: [
+        '/clothing/2025-seth-front.jpeg',
+        '/clothing/2025-seth-back.jpeg',
+        '/clothing/2025-seth-side.jpeg',
+        '/clothing/2025-seth-front-off.jpeg',
+        '/clothing/2025-seth-back-off.jpeg',
+      ],
+      title: 'France, landscapes, and cocktails',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      images: [
+        '/clothing/2025-first-one-f.jpeg',
+        '/clothing/2025-first-one-b.jpeg',
+      ],
+      title: 'Fruits and flowers',
+      medium: 'acrylic on shirt',
+
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      images: [
+        '/clothing/2025-flower-jacob-front.jpeg',
+        '/clothing/2025-flower-jacob-side.jpeg',
+      ],
+      title: 'Flowers and France',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      images: [
+        '/clothing/2025-cat-bar-front.jpeg',
+        '/clothing/2025-cat-bar-back.jpeg',
+      ],
+      title: 'Cats at the bar',
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-03-01',
+    },
+    {
+      images: ['/clothing/25-conor-f.jpg', '/clothing/25-conor-b.jpg'],
+      title: "Conor's shirt – CA landscape",
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-06-01',
     },
   ],
 };
