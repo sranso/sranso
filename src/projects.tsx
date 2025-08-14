@@ -21,7 +21,7 @@ export const enum ProjectNamesEnum {
 
 const roseSeries: Artwork[] = [
   {
-    image: '/paros-greece/2022-4-rose-series-1.jpg',
+    images: ['/paros-greece/2022-4-rose-series-1.jpg'],
     title: 'The Ninth Rose, 1/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -29,7 +29,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-2.jpg',
+    images: ['/paros-greece/2022-4-rose-series-2.jpg'],
     title: 'The Ninth Rose, 2/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -37,7 +37,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-3.jpg',
+    images: ['/paros-greece/2022-4-rose-series-3.jpg'],
     title: 'The Ninth Rose, 3/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -45,7 +45,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-4.jpg',
+    images: ['/paros-greece/2022-4-rose-series-4.jpg'],
     title: 'The Ninth Rose, 4/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -53,7 +53,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-5.jpg',
+    images: ['/paros-greece/2022-4-rose-series-5.jpg'],
     title: 'The Ninth Rose, 5/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -61,7 +61,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-6.jpg',
+    images: ['/paros-greece/2022-4-rose-series-6.jpg'],
     title: 'The Ninth Rose, 6/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -69,7 +69,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-7.jpg',
+    images: ['/paros-greece/2022-4-rose-series-7.jpg'],
     title: 'The Ninth Rose, 7/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -77,7 +77,7 @@ const roseSeries: Artwork[] = [
     available: true,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-8.jpg',
+    images: ['/paros-greece/2022-4-rose-series-8.jpg'],
     title: 'The Ninth Rose, 8/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -85,7 +85,7 @@ const roseSeries: Artwork[] = [
     available: false,
   },
   {
-    image: '/paros-greece/2022-4-rose-series-9.jpg',
+    images: ['/paros-greece/2022-4-rose-series-9.jpg'],
     title: 'The Ninth Rose, 9/9',
     medium: 'drypoint and watercolor on cotton',
     dimensions: '3.75x6"',
@@ -107,7 +107,7 @@ export type Artwork = {
   description?: string;
   dimensions?: string;
   href?: string;
-  image: string;
+  images: string[];
   medium: string;
   // notes are internal, not for sharing
   notes?: string;
@@ -334,7 +334,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: [
     {
-      image: '/illustrations/2024-book-rats.jpg',
+      images: ['/illustrations/2024-book-rats.jpg'],
       title: 'Book rats',
       medium: 'pen and digital color',
       dimensions: '2x6"',
@@ -343,7 +343,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-11-01',
     },
     {
-      image: '/illustrations/fish-in-the-sea-2018.jpg',
+      images: ['/illustrations/fish-in-the-sea-2018.jpg'],
       title:
         'Daily Shout for The New Yorker – A sampling of the many fish in the sea',
       medium: 'watercolor',
@@ -352,7 +352,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/a-sampling-of-the-many-fish-in-the-sea',
     },
     {
-      image: '/illustrations/things-a-startup-has-instead-hr.jpg',
+      images: ['/illustrations/things-a-startup-has-instead-hr.jpg'],
       title:
         'Daily Shout for The New Yorker – Things a startup has instead of HR',
       medium: 'watercolor',
@@ -361,7 +361,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/things-a-startup-has-instead-of-hr',
     },
     {
-      image: '/illustrations/water-towers-2018.jpg',
+      images: ['/illustrations/water-towers-2018.jpg'],
       title:
         'Daily Shout for The New Yorker - Water towers that could hold my tears',
       medium: 'watercolor',
@@ -370,7 +370,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/water-towers-that-could-hold-my-tears',
     },
     {
-      image: '/illustrations/2018-10-greg-microdoses.jpg',
+      images: ['/illustrations/2018-10-greg-microdoses.jpg'],
       title: 'Cartoon for The New Yorker - Greg microdoses',
       medium: 'pen and ink on paper',
       available: false,
@@ -378,7 +378,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://condenaststore.com/featured/gods-elbow-sarah-ransohoff.html',
     },
     {
-      image: '/illustrations/meditation-retreat-squirrel-18.gif',
+      images: ['/illustrations/meditation-retreat-squirrel-18.gif'],
       title:
         'Daily Shout for The New Yorker - Main forms of entertainment on a meditation retreat',
       medium: 'watercolor and iPad',
@@ -387,7 +387,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/main-forms-of-entertainment-on-a-meditation-retreat',
     },
     {
-      image: '/illustrations/owl-wisdom-2019.jpg',
+      images: ['/illustrations/owl-wisdom-2019.jpg'],
       title: 'Daily Shout for The New Yorker - Owl wisdom',
       medium: 'watercolor and iPad',
       available: false,
@@ -395,7 +395,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/owl-wisdom',
     },
     {
-      image: '/illustrations/2023-meat-alts.jpg',
+      images: ['/illustrations/2023-meat-alts.jpg'],
       title:
         'Daily Shout for The New Yorker - Super realistic meat alternatives',
       medium: 'watercolor and iPad',
@@ -404,12 +404,13 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       href: 'https://www.newyorker.com/humor/daily-shouts/super-realistic-meat-alternatives',
     },
   ],
+
   [ProjectNamesEnum.MOKUHANGA]: [
     {
       available: true,
       date: '2025-04-05',
       dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-cat-flower.jpg',
+      images: ['/mokuhanga/2025-04-05-cat-flower.jpg'],
       medium: 'watercolor on Rives BFK cream',
       title: 'Miso being bad',
     },
@@ -417,7 +418,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2025-04-05',
       dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-xena.jpg',
+      images: ['/mokuhanga/2025-04-05-xena.jpg'],
       medium: 'watercolor on Rives BFK cream',
       title: 'Xena the seal',
     },
@@ -425,7 +426,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
       date: '2025-04-05',
       dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-chickens.jpg',
+      images: ['/mokuhanga/2025-04-05-chickens.jpg'],
       medium: 'watercolor on Rives BFK cream',
       title: 'Chickens',
     },
@@ -433,14 +434,31 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2025-04-05',
       dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-chicken.jpg',
+      images: ['/mokuhanga/2025-04-05-chicken.jpg'],
       medium: 'watercolor on Rives BFK cream',
       title: 'Holding a chicken',
     },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-04-05-curled-cat.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Curled cat',
+    },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-04-05-flowers.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Flowers',
+    },
   ],
+
   [ProjectNamesEnum.CAFE_SERIES]: [
     {
-      image: '/nyc/2023-11-26.jpg',
+      images: ['/nyc/2023-11-26.jpg'],
       title: 'Golden light',
       medium: 'oil on canvas',
       dimensions: '40x26"',
@@ -448,7 +466,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-26',
     },
     {
-      image: '/nyc/2024-02-08.jpeg',
+      images: ['/nyc/2024-02-08.jpeg'],
       title: 'Untitled',
       medium: 'oil on cardboard',
       dimensions: '10x10"',
@@ -457,7 +475,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-02-08',
     },
     {
-      image: '/nyc/2024-02-28.jpeg',
+      images: ['/nyc/2024-02-28.jpeg'],
       title: 'Light and wind',
       medium: 'oil on canvas',
       dimensions: '20x16"',
@@ -466,7 +484,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-02-24',
     },
     {
-      image: '/nyc/2024-03-10-frankels.jpeg',
+      images: ['/nyc/2024-03-10-frankels.jpeg'],
       title: 'Frankels',
       medium: 'oil on cardboard',
       dimensions: '9x12"',
@@ -475,12 +493,13 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2024-03-10',
     },
   ],
+
   [ProjectNamesEnum.ANIMAL_WORLD_2024]: [
     {
       available: true,
       date: '2024-06-01',
       dimensions: '8x5"',
-      image: '/2024-animal-world/24-deer-in-thicket.jpg',
+      images: ['/2024-animal-world/24-deer-in-thicket.jpg'],
       medium: 'pen and whiteout paper',
       title: 'Deer in thicket',
     },
@@ -488,7 +507,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '12x6.5"',
-      image: '/2024-animal-world/bear.jpg',
+      images: ['/2024-animal-world/bear.jpg'],
       medium: 'pen on paper',
       title: 'The wise bear',
     },
@@ -496,7 +515,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '8x11"',
-      image: '/2024-animal-world/community.jpg',
+      images: ['/2024-animal-world/community.jpg'],
       medium: 'pen on paper',
       title: 'The infinite and the specific / Community',
     },
@@ -504,7 +523,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '6.5x9"',
-      image: '/2024-animal-world/ghosts.jpg',
+      images: ['/2024-animal-world/ghosts.jpg'],
       medium: 'pen and whiteout on paper',
       title: 'Ghosts',
     },
@@ -512,7 +531,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '13x6"',
-      image: '/2024-animal-world/hidden-bear.jpg',
+      images: ['/2024-animal-world/hidden-bear.jpg'],
       medium: 'pen and whiteout on paper',
       title: 'Hidden bear',
     },
@@ -520,7 +539,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '6x8"', // todo
-      image: '/2024-animal-world/mcgorlick.jpg',
+      images: ['/2024-animal-world/mcgorlick.jpg'],
       medium: 'pen and whiteout on paper',
       title: 'McGorlick',
     },
@@ -528,7 +547,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '6.5x12"',
-      image: '/2024-animal-world/storm-sec-1.jpg',
+      images: ['/2024-animal-world/storm-sec-1.jpg'],
       medium: 'pen and whiteout on paper',
       title: 'Looking into the crevasse',
     },
@@ -536,15 +555,16 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: true,
       date: '2024-06-01',
       dimensions: '8.5x13.5"',
-      image: '/2024-animal-world/storm-sec-2.jpg',
+      images: ['/2024-animal-world/storm-sec-2.jpg'],
       medium: 'pen and whiteout on paper',
       title: 'A flash of light',
     },
   ],
+
   [ProjectNamesEnum.WORKS_ON_CARDBOARD]: [
     {
       date: '2023-09-11',
-      image: '/nyc/2023-09-11.jpg',
+      images: ['/nyc/2023-09-11.jpg'],
       medium: 'gouache on carton board',
       title: 'Figs and bar tools',
       dimensions: '6x8"',
@@ -552,7 +572,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
     {
       date: '2023-09-10',
-      image: '/nyc/2023-09-10.jpg',
+      images: ['/nyc/2023-09-10.jpg'],
       title: 'First time here',
       medium: 'gouache on carton board',
       dimensions: '6x8"',
@@ -560,9 +580,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 125,
     },
   ],
+
   [ProjectNamesEnum.MT_GRETNA_2023]: [
     {
-      image: '/mount-gretna/07-08-23-martha-sun.jpg',
+      images: ['/mount-gretna/07-08-23-martha-sun.jpg'],
       title: "Martha's sun",
       medium: 'watercolor & gouache on paper',
       dimensions: '8x10"',
@@ -570,7 +591,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/mount-gretna/06-01-23.jpg',
+      images: ['/mount-gretna/06-01-23.jpg'],
       title: 'Nature shapes',
       medium: 'watercolor & gouache on carton board',
       dimensions: '8x10"',
@@ -578,7 +599,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/mount-gretna/06-01-23-self-p.jpg',
+      images: ['/mount-gretna/06-01-23-self-p.jpg'],
       title: 'Self portrait',
       medium: 'oil on carton board',
       dimensions: '10x8"',
@@ -586,7 +607,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/mount-gretna/07-08-23-the-tree.jpg',
+      images: ['/mount-gretna/07-08-23-the-tree.jpg'],
       title: 'The tree',
       medium: 'oil on carton boards',
       dimensions: '24x12.5"',
@@ -595,7 +616,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
     {
-      image: '/mount-gretna/07-08-22.jpg',
+      images: ['/mount-gretna/07-08-22.jpg'],
       title: 'A rock and two roads',
       medium: 'oil on birch',
       dimensions: '24x24"',
@@ -604,7 +625,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
     {
-      image: '/mount-gretna/07-06-23-rain.jpg',
+      images: ['/mount-gretna/07-06-23-rain.jpg'],
       title: 'Inside on a rainy day',
       medium: 'oil on birch',
       dimensions: '24x24"',
@@ -613,7 +634,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
     {
-      image: '/mount-gretna/06-28-23-rain.jpg',
+      images: ['/mount-gretna/06-28-23-rain.jpg'],
       title: 'From under the porch on a rainy day',
       medium: 'oil on three carton boards',
       dimensions: '9x36"',
@@ -622,7 +643,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
     {
-      image: '/mount-gretna/06-25-23-night.jpg',
+      images: ['/mount-gretna/06-25-23-night.jpg'],
       title: 'Night light',
       medium: 'oil on carton board',
       dimensions: '8x10"',
@@ -631,7 +652,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
     {
-      image: '/mount-gretna/06-25-23-branches.jpg',
+      images: ['/mount-gretna/06-25-23-branches.jpg'],
       title: 'Sticks, leaves, and moss',
       medium: 'oil on two carton boards',
       dimensions: '9x24"',
@@ -640,9 +661,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 240,
     },
   ],
+
   [ProjectNamesEnum.BIRDS_OF_NY_2023]: [
     {
-      image: '/nyc/2022-12-1-tufted-titmouse.jpg',
+      images: ['/nyc/2022-12-1-tufted-titmouse.jpg'],
       title: 'Tufted titmouse',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -650,7 +672,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/nyc/2022-12-1-red-winged-blackbird.jpg',
+      images: ['/nyc/2022-12-1-red-winged-blackbird.jpg'],
       title: 'Red winged blackbird',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -658,7 +680,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/nyc/2022-12-1-oriole.jpg',
+      images: ['/nyc/2022-12-1-oriole.jpg'],
       title: 'Oriole',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -666,7 +688,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/nyc/2022-12-1-northern-flicker.jpg',
+      images: ['/nyc/2022-12-1-northern-flicker.jpg'],
       title: 'Northern flicker',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -674,7 +696,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/nyc/2022-12-1-northern-cardinal.jpg',
+      images: ['/nyc/2022-12-1-northern-cardinal.jpg'],
       title: 'Northern cardinal',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -682,7 +704,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
     {
-      image: '/nyc/2022-12-1-eastern-bluebird.jpg',
+      images: ['/nyc/2022-12-1-eastern-bluebird.jpg'],
       title: 'Eastern bluebird',
       medium: 'watercolor on paper',
       dimensions: '10x8"',
@@ -690,9 +712,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       available: false,
     },
   ],
+
   [ProjectNamesEnum.GSHI_2022]: [
     {
-      image: '/maine/2022-6-30-neil.jpg',
+      images: ['/maine/2022-6-30-neil.jpg'],
       title: 'Neil, 2022',
       medium: 'pen on paper',
       dimensions: '14x11"',
@@ -701,7 +724,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-06-30',
     },
     {
-      image: '/maine/2022-7-1-wc.jpg',
+      images: ['/maine/2022-7-1-wc.jpg'],
       title: 'A seal jumped for fish',
       medium: 'watercolor on paper',
       dimensions: '18x24"',
@@ -710,7 +733,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 730,
     },
     {
-      image: '/maine/2022-6-29-wc.jpg',
+      images: ['/maine/2022-6-29-wc.jpg'],
       title: 'A slug sat in my palette',
       medium: 'watercolor on paper',
       dimensions: '18x24"',
@@ -719,7 +742,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 730,
     },
     {
-      image: '/maine/2022-7-1-water-wc.jpg',
+      images: ['/maine/2022-7-1-water-wc.jpg'],
       title: 'From under the bridge',
       medium: 'watercolor on paper',
       dimensions: '18x24"',
@@ -728,7 +751,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 730,
     },
     {
-      image: '/maine/2022-6-27.jpg',
+      images: ['/maine/2022-6-27.jpg'],
       title: 'Great Spruce Head Island',
       medium: 'acrylic on board',
       dimensions: '12x9"',
@@ -736,7 +759,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-06-27',
     },
     {
-      image: '/maine/2022-6-28.jpg',
+      images: ['/maine/2022-6-28.jpg'],
       title: 'Great Spruce Head Island',
       medium: 'acrylic on board',
       dimensions: '12x9"',
@@ -745,9 +768,34 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 270,
     },
   ],
+
   [ProjectNamesEnum.PETS]: [
     {
-      image: '/pets/2023-01-31-Ollie.jpg',
+      images: ['/pets/25-Lainey.jpg'],
+      title: 'Lainey',
+      medium: 'iPad',
+      available: false,
+      date: '2025-08-05',
+      dimensions: '14x10" printed',
+    },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-04-05-cat-flower.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Miso being bad',
+    },
+    {
+      available: true,
+      date: '2025-04-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-04-05-xena.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Xena the seal',
+    },
+    {
+      images: ['/pets/2023-01-31-Ollie.jpg'],
       title: 'Milo',
       medium: 'iPad',
       available: false,
@@ -755,7 +803,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'n/a',
     },
     {
-      image: '/pets/2023-01-31-Ethan.jpg',
+      images: ['/pets/2023-01-31-Ethan.jpg'],
       title: 'Ethan',
       medium: 'iPad',
       available: false,
@@ -763,7 +811,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'n/a',
     },
     {
-      image: '/pets/2022-5-Dean.jpg',
+      images: ['/pets/2022-5-Dean.jpg'],
       title: 'Dean',
       medium: 'iPad',
       available: false,
@@ -771,7 +819,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'n/a',
     },
     {
-      image: '/pets/2021-12-6-jerry.png',
+      images: ['/pets/2021-12-6-jerry.png'],
       title: 'Jerry',
       medium: 'iPad',
       available: false,
@@ -779,7 +827,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'n/a',
     },
     {
-      image: '/pets/2020-brisket.jpg',
+      images: ['/pets/2020-brisket.jpg'],
       title: 'Brisket',
       medium: 'watercolor on paper',
       dimensions: '14x10"',
@@ -787,7 +835,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-01-01',
     },
     {
-      image: '/pets/2020-angus.jpg',
+      images: ['/pets/2020-angus.jpg'],
       title: 'Angus',
       medium: 'watercolor on paper',
       dimensions: '14x10"',
@@ -795,7 +843,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-01-01',
     },
     {
-      image: '/marcias-ranch/2020-9-5-toby.jpg',
+      images: ['/marcias-ranch/2020-9-5-toby.jpg'],
       title: 'Toby',
       medium: 'acrylic on board',
       dimensions: '4x4"',
@@ -803,7 +851,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-05',
     },
     {
-      image: '/marcias-ranch/2020-9-5-eartha.jpg',
+      images: ['/marcias-ranch/2020-9-5-eartha.jpg'],
       title: 'Eartha',
       medium: 'acrylic on board',
       dimensions: '3x4"',
@@ -811,7 +859,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-05',
     },
     {
-      image: '/nyc/2021-12-25.jpg',
+      images: ['/nyc/2021-12-25.jpg'],
       title: 'Miso',
       medium: 'iPad',
       available: false,
@@ -820,34 +868,18 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: 'n/a',
     },
     {
-      image: '/nyc/2021-12-24-xena.jpg',
+      images: ['/nyc/2021-12-24-xena.jpg'],
       title: 'Xena',
       medium: 'iPad',
       available: false,
       date: '2021-12-24',
-
       dimensions: 'n/a',
     },
-    {
-      available: true,
-      date: '2025-04-05',
-      dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-cat-flower.jpg',
-      medium: 'watercolor on Rives BFK cream',
-      title: 'Miso being bad',
-    },
-    {
-      available: true,
-      date: '2025-04-05',
-      dimensions: '8x10"',
-      image: '/mokuhanga/2025-04-05-xena.jpg',
-      medium: 'watercolor on Rives BFK cream',
-      title: 'Xena the seal',
-    },
   ],
+
   [ProjectNamesEnum.MARCIAS_RANCH_2020]: [
     {
-      image: '/marcias-ranch/2020-8-14-purple-sky.JPG',
+      images: ['/marcias-ranch/2020-8-14-purple-sky.JPG'],
       title: 'Sunset',
       medium: 'watercolor on paper',
       dimensions: '8x11.5"',
@@ -855,7 +887,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-08-14',
     },
     {
-      image: '/marcias-ranch/2020-8-14-pink-sky.JPG',
+      images: ['/marcias-ranch/2020-8-14-pink-sky.JPG'],
       title: 'Sunset',
       medium: 'watercolor on paper',
       dimensions: '8x11.5"',
@@ -863,7 +895,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-08-14',
     },
     {
-      image: '/marcias-ranch/2020-07-16-peonies.jpg',
+      images: ['/marcias-ranch/2020-07-16-peonies.jpg'],
       title: 'Peonies',
       medium: 'acrylic on board',
       dimensions: '6x8"',
@@ -871,7 +903,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-07-16',
     },
     {
-      image: '/marcias-ranch/2020-07-17-hollyhocks.jpg',
+      images: ['/marcias-ranch/2020-07-17-hollyhocks.jpg'],
       title: 'Hollyhocks',
       medium: 'acrylic on board',
       dimensions: '6x8"',
@@ -879,7 +911,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-07-17',
     },
     {
-      image: '/marcias-ranch/2020-07-18-purples.jpg',
+      images: ['/marcias-ranch/2020-07-18-purples.jpg'],
       title: 'Purple sage',
       medium: 'acrylic on board',
       dimensions: '6x8"',
@@ -887,7 +919,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-07-18',
     },
     {
-      image: '/marcias-ranch/2020-08-01-succulent.jpg',
+      images: ['/marcias-ranch/2020-08-01-succulent.jpg'],
       title: 'Succulent',
       medium: 'acrylic on board',
       dimensions: '9x12"',
@@ -896,7 +928,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 250,
     },
     {
-      image: '/marcias-ranch/2020-8-23-clouds-mtns.jpg',
+      images: ['/marcias-ranch/2020-8-23-clouds-mtns.jpg'],
       title: 'Mountains and clouds',
       medium: 'acrylic on board',
       dimensions: '6x6"',
@@ -905,7 +937,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 110,
     },
     {
-      image: '/marcias-ranch/2020-8-23-clouds.jpg',
+      images: ['/marcias-ranch/2020-8-23-clouds.jpg'],
       title: 'Clouds',
       medium: 'acrylic on board',
       dimensions: '6x6"',
@@ -914,7 +946,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 110,
     },
     {
-      image: '/marcias-ranch/2020-8-23-cows.jpg',
+      images: ['/marcias-ranch/2020-8-23-cows.jpg'],
       title: 'Cows',
       medium: 'acrylic on board',
       dimensions: '6x6"',
@@ -923,7 +955,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 110,
     },
     {
-      image: '/marcias-ranch/2020-8-30-diptych.jpg',
+      images: ['/marcias-ranch/2020-8-30-diptych.jpg'],
       title: 'Leaves',
       medium: 'acrylic on panels',
       dimensions: '12x12"', // not right
@@ -931,7 +963,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-08-30',
     },
     {
-      image: '/marcias-ranch/2020-8-31-pregnant-cow.jpg',
+      images: ['/marcias-ranch/2020-8-31-pregnant-cow.jpg'],
       title: 'Pregnant cow',
       medium: 'acrylic on board',
       dimensions: '6x8"',
@@ -939,7 +971,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-08-31',
     },
     {
-      image: '/marcias-ranch/2020-9-2-pool.jpg',
+      images: ['/marcias-ranch/2020-9-2-pool.jpg'],
       title: 'Pool',
       medium: 'acrylic on board',
       dimensions: '6x8"',
@@ -947,7 +979,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-02',
     },
     {
-      image: '/marcias-ranch/2020-9-5-casita.jpg',
+      images: ['/marcias-ranch/2020-9-5-casita.jpg'],
       title: 'The Casita',
       medium: 'acrylic on board',
       dimensions: '9x12"',
@@ -955,7 +987,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-05',
     },
     {
-      image: '/marcias-ranch/2020-9-5-i-came-from-you.jpg',
+      images: ['/marcias-ranch/2020-9-5-i-came-from-you.jpg'],
       title: 'I came from you',
       medium: 'acrylic on board',
       dimensions: '9x12"',
@@ -963,7 +995,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-05',
     },
     {
-      image: '/marcias-ranch/2020-9-7-road.jpg',
+      images: ['/marcias-ranch/2020-9-7-road.jpg'],
       title: 'The road',
       medium: 'acrylic on board',
       dimensions: '9x12"', // not right
@@ -971,9 +1003,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2020-09-07',
     },
   ],
+
   [ProjectNamesEnum.OAXACA_2022]: [
     {
-      image: '/oaxaca/2022-10-08.jpg',
+      images: ['/oaxaca/2022-10-08.jpg'],
       title: 'Nature study, 2022',
       medium: 'watercolor on paper',
       dimensions: '16x12"',
@@ -981,7 +1014,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-10-08',
     },
     {
-      image: '/oaxaca/2022-09-13-print.jpg',
+      images: ['/oaxaca/2022-09-13-print.jpg'],
       title: 'Untitled, edition of 5',
       medium: 'woodcut, ink on cotton',
       dimensions: '7.5x9.5"',
@@ -990,7 +1023,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 180,
     },
     {
-      image: '/oaxaca/2022-10-20.jpg',
+      images: ['/oaxaca/2022-10-20.jpg'],
       title: 'Flowers, edition of 10',
       medium: 'etching, ink on cotton',
       dimensions: '7.6x7.6"',
@@ -999,7 +1032,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 185,
     },
     {
-      image: '/oaxaca/2022-09-05.jpg',
+      images: ['/oaxaca/2022-09-05.jpg'],
       title: 'Bedroom at night, 2022',
       medium: 'ink on bristol',
       dimensions: '8x24"',
@@ -1008,7 +1041,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-05',
     },
     {
-      image: '/oaxaca/2022-09-11.jpg',
+      images: ['/oaxaca/2022-09-11.jpg'],
       title: 'Untitled, 2022',
       medium: 'pen on paper',
       dimensions: '14x11"',
@@ -1017,7 +1050,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-11',
     },
     {
-      image: '/oaxaca/2022-10-04.jpg',
+      images: ['/oaxaca/2022-10-04.jpg'],
       title: 'Buddies',
       medium: 'watercolor on paper',
       dimensions: '16x12"',
@@ -1026,7 +1059,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-10-04',
     },
     {
-      image: '/oaxaca/2022-09-20.JPG',
+      images: ['/oaxaca/2022-09-20.JPG'],
       title: 'Nature sketch',
       medium: 'watercolor on paper',
       dimensions: '10x12"',
@@ -1034,7 +1067,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-20',
     },
     {
-      image: '/oaxaca/2022-09-09.jpg',
+      images: ['/oaxaca/2022-09-09.jpg'],
       title: 'Night study',
       medium: 'watercolor on paper',
       dimensions: '16x12"',
@@ -1042,7 +1075,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-09',
     },
     {
-      image: '/oaxaca/2022-09-30.jpg',
+      images: ['/oaxaca/2022-09-30.jpg'],
       title: 'Flowers in space, 2022',
       medium: 'acrylic on three boards',
       dimensions: '16x16"',
@@ -1051,7 +1084,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 820,
     },
     {
-      image: '/oaxaca/2022-09-23.jpg',
+      images: ['/oaxaca/2022-09-23.jpg'],
       title: 'Flowers, 2022',
       medium: 'acrylic on two boards',
       dimensions: '10x16"',
@@ -1059,7 +1092,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-23',
     },
     {
-      image: '/oaxaca/2022-09-22-corner.jpg',
+      images: ['/oaxaca/2022-09-22-corner.jpg'],
       title: 'Add it to the wall series!, 2022',
       medium: 'acrylic on canvas',
       dimensions: '10x8"',
@@ -1067,7 +1100,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-09-22',
     },
     {
-      image: '/oaxaca/2022-09-19.jpg',
+      images: ['/oaxaca/2022-09-19.jpg'],
       title: 'Rainy season, 2022',
       medium: 'acrylic on canvas',
       dimensions: '6x8"',
@@ -1076,7 +1109,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 150,
     },
     {
-      image: '/oaxaca/2022-09-17.jpg',
+      images: ['/oaxaca/2022-09-17.jpg'],
       title: 'To stay, 2022',
       medium: 'acrylic on two boards',
       dimensions: '12x18"',
@@ -1085,7 +1118,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 540,
     },
     {
-      image: '/oaxaca/2022-09-10.jpg',
+      images: ['/oaxaca/2022-09-10.jpg'],
       title: 'Night porch, 2022',
       medium: 'acrylic on two boards',
       dimensions: '8x16"',
@@ -1094,11 +1127,12 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       cost: 320,
     },
   ],
+
   [ProjectNamesEnum.PAROS_2022]: [
     ...roseSeries,
     // coffee drawings ?
     {
-      image: '/paros-greece/2022-3-27-bread.jpg',
+      images: ['/paros-greece/2022-3-27-bread.jpg'],
       title: 'Holy bread, 2022',
       medium: 'graphite and gouache on gray paper',
       dimensions: '11.75x15.25"',
@@ -1107,7 +1141,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-03-27',
     },
     {
-      image: '/paros-greece/2022-3-self-portrait.jpg',
+      images: ['/paros-greece/2022-3-self-portrait.jpg'],
       title: 'Self portrait, 2022',
       medium: 'graphite and gouache on gray paper',
       dimensions: '20x14.5"',
@@ -1116,7 +1150,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-03-27',
     },
     {
-      image: '/paros-greece/2022-3-23-flowers.jpg',
+      images: ['/paros-greece/2022-3-23-flowers.jpg'],
       title: 'Untitled, 2022',
       medium: 'acrylic on paper',
       dimensions: '29x40"',
@@ -1124,7 +1158,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-03-23',
     },
     {
-      image: '/paros-greece/2022-4-morandi.jpg',
+      images: ['/paros-greece/2022-4-morandi.jpg'],
       title: 'Untitled, 2022',
       medium: 'oil on board',
       dimensions: '9x12"',
@@ -1132,7 +1166,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-04-01',
     },
     {
-      image: '/paros-greece/2022-4-still-bird.jpg',
+      images: ['/paros-greece/2022-4-still-bird.jpg'],
       title: 'Untitled, 2022',
       medium: 'oil on board',
       dimensions: '11x11"',
@@ -1140,7 +1174,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-04-01',
     },
     {
-      image: '/paros-greece/2022-4-cezanne-still.jpg',
+      images: ['/paros-greece/2022-4-cezanne-still.jpg'],
       title: 'Untitled, 2022',
       medium: 'oil on canvas',
       dimensions: '19.75x19.75"',
@@ -1148,9 +1182,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2022-04-01',
     },
   ],
+
   [ProjectNamesEnum.INTERIORS_2023]: [
     {
-      image: '/nyc/2023-01-26.jpg',
+      images: ['/nyc/2023-01-26.jpg'],
       title: 'Maquette, 2023',
       medium: 'acrylic on board',
       dimensions: '10x8"',
@@ -1159,7 +1194,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-26',
     },
     {
-      image: '/nyc/2023-01-23.jpg',
+      images: ['/nyc/2023-01-23.jpg'],
       title: 'Untitled, 2023',
       medium: 'acrylic on board',
       dimensions: '10x8"',
@@ -1168,7 +1203,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-23',
     },
     {
-      image: '/nyc/2023-01-15.jpg',
+      images: ['/nyc/2023-01-15.jpg'],
       title: 'Finding space, 2023',
       medium: 'acrylic on two boards',
       dimensions: '12x18"',
@@ -1177,7 +1212,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-15',
     },
     {
-      image: '/nyc/2023-01-14-2.jpg',
+      images: ['/nyc/2023-01-14-2.jpg'],
       title: 'Yin yang, 2023',
       medium: 'acrylic on two boards',
       dimensions: '12x18"',
@@ -1186,7 +1221,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-14',
     },
     {
-      image: '/nyc/2023-01-04.jpg',
+      images: ['/nyc/2023-01-04.jpg'],
       title: "The sun's going down, 2023",
       medium: 'acrylic on board',
       dimensions: '10x8"',
@@ -1195,9 +1230,10 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2023-01-04',
     },
   ],
+
   [ProjectNamesEnum.CLOTHING]: [
     {
-      image: '/clothing/2025-landscape-shorts.jpeg',
+      images: ['/clothing/2025-landscape-shorts.jpeg'],
       title: 'Chickens on the farm',
       medium: 'acrylic on shorts',
       available: true,
@@ -1205,35 +1241,35 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-lilies.jpeg',
+      images: ['/clothing/2025-lilies.jpeg'],
       title: 'Lilies',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-peacock.jpeg',
+      images: ['/clothing/2025-peacock.jpeg'],
       title: 'Peacock',
       medium: 'acrylic on torn linen bedsheet',
       available: false,
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-rinad.jpeg',
+      images: ['/clothing/2025-rinad.jpeg'],
       title: 'Sunflowers and tomatoes',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-seth.jpeg',
+      images: ['/clothing/2025-seth.jpeg'],
       title: 'France, landscapes, and cocktails',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-first-one.jpeg',
+      images: ['/clothing/2025-first-one.jpeg'],
       title: 'Fruits and flowers',
       medium: 'acrylic on shirt',
 
@@ -1241,19 +1277,43 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-jacob-flowers.jpeg',
+      images: ['/clothing/2025-jacob-flowers.jpeg'],
       title: 'Flowers and France',
       medium: 'acrylic on shirt',
       available: false,
       date: '2025-03-01',
     },
     {
-      image: '/clothing/2025-cats-bar.jpeg',
+      images: ['/clothing/2025-cats-bar.jpeg'],
       title: 'Cats at the bar',
       medium: 'acrylic on shirt',
-
       available: false,
       date: '2025-03-01',
+    },
+    {
+      images: [
+        '/clothing/25-antoine-shorts-f.jpg',
+        '/clothing/25-antoine-shorts-b.jpg',
+      ],
+      title: "Antoine's shorts – Maria the sheep",
+      medium: 'fabric pen on shorts',
+      available: false,
+      date: '2025-05-01',
+    },
+    {
+      images: ['/clothing/25-conor-f.jpg', '/clothing/25-conor-b.jpg'],
+      title: "Conor's shirt – CA landscape",
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-06-01',
+    },
+    {
+      images: ['/clothing/25-jlo-front.jpg', '/clothing/25-jlo-back.jpg'],
+      title: "Kate's shirt – Jackruit and apples",
+      medium: 'acrylic on shirt',
+      available: false,
+      date: '2025-07-01',
+      cost: 225,
     },
   ],
 };
@@ -1269,183 +1329,183 @@ export const getArtworkPath = (
     .replace(/\//g, '-')}`;
 };
 
-const penAndPencil: Artwork[] = [
-  {
-    image: '/nyc/2021-09-26-roof-plants.jpg',
-    title: 'Rooftop plants, 2021',
-    medium: 'graphite on paper',
-    dimensions: '14x17"',
-    available: true,
-    cost: 310,
-    date: '2021-09-26',
-  },
-  {
-    image: '/canada/2022-7-12-jimmy.jpg',
-    title: 'Jimmy, 2022',
-    medium: 'pen on paper',
-    dimensions: '14x11"',
-    available: false,
-    cost: 125,
-    date: '2022-07-12',
-  },
-  {
-    image: '/canada/2022-7-12-shelley-milo.jpg',
-    title: 'Shelley and Milo, 2022',
-    medium: 'pen on paper',
-    dimensions: '14x11"',
-    available: false,
-    cost: 125,
-    date: '2022-07-12',
-  },
-  {
-    image: '/nc/2022-08-23.jpg',
-    title: 'The back yard, 2022',
-    medium: 'ink on bristol',
-    dimensions: '8x24"',
-    available: false,
-    cost: 250,
-    date: '2022-08-23',
-  },
-  {
-    image: '/nc/2022-08-24.jpg',
-    title: 'Dry Creek Trail, 2022',
-    medium: 'ink on bristol',
-    dimensions: '11x24"',
-    available: false,
-    cost: 345,
-    date: '2022-08-24',
-  },
-];
+// const penAndPencil: Artwork[] = [
+//   {
+//     images: ['/nyc/2021-09-26-roof-plants.jpg'],
+//     title: 'Rooftop plants, 2021',
+//     medium: 'graphite on paper',
+//     dimensions: '14x17"',
+//     available: true,
+//     cost: 310,
+//     date: '2021-09-26',
+//   },
+//   {
+//     images: ['/canada/2022-7-12-jimmy.jpg'],
+//     title: 'Jimmy, 2022',
+//     medium: 'pen on paper',
+//     dimensions: '14x11"',
+//     available: false,
+//     cost: 125,
+//     date: '2022-07-12',
+//   },
+//   {
+//     images: ['/canada/2022-7-12-shelley-milo.jpg'],
+//     title: 'Shelley and Milo, 2022',
+//     medium: 'pen on paper',
+//     dimensions: '14x11"',
+//     available: false,
+//     cost: 125,
+//     date: '2022-07-12',
+//   },
+//   {
+//     images: ['/nc/2022-08-23.jpg'],
+//     title: 'The back yard, 2022',
+//     medium: 'ink on bristol',
+//     dimensions: '8x24"',
+//     available: false,
+//     cost: 250,
+//     date: '2022-08-23',
+//   },
+//   {
+//     images: ['/nc/2022-08-24.jpg'],
+//     title: 'Dry Creek Trail, 2022',
+//     medium: 'ink on bristol',
+//     dimensions: '11x24"',
+//     available: false,
+//     cost: 345,
+//     date: '2022-08-24',
+//   },
+// ];
 
-const miscWatercolor: Artwork[] = [
-  // 2022 and earlier
-  {
-    image: '/nc/2022-6-18.jpg',
-    title: 'The red tree again',
-    medium: 'watercolor on paper',
-    dimensions: '4x6"',
-    available: false,
-    date: '2022-06-18',
-  },
-  {
-    image: '/nc/2022-6-17.jpg',
-    title: 'The red tree',
-    medium: 'watercolor on paper',
-    dimensions: '4x6"',
-    available: false,
-    date: '2022-06-17',
-  },
-  {
-    image: '/paros-greece/2022-2-church.jpg',
-    title: 'Church',
-    medium: 'watercolor on paper',
-    dimensions: '9x12"',
-    available: false,
-    date: '2022-02-01',
-  },
-  {
-    image: '/nc/2020-6-29-rosemary-field.jpg',
-    title: "Rosemary's farm",
-    medium: 'watercolor on paper',
-    dimensions: '5.5x12"',
-    available: false,
-    date: '2020-06-29',
-  },
-  {
-    image: '/nc/2020-5-jlo.jpg',
-    title: 'North Carolina home',
-    medium: 'watercolor on paper',
-    dimensions: '4x6"',
-    available: false,
-    date: '2020-05-01',
-  },
-  {
-    image: '/nc/2020-4-18-barn.jpg',
-    title: "Rosemary's barn",
-    medium: 'watercolor on paper',
-    dimensions: '5x8"',
-    available: false,
-    date: '2020-04-18',
-  },
-  {
-    image: '/canada/2017-canada-sketch.jpg',
-    title: 'The Big House',
-    medium: 'watercolor on paper',
-    dimensions: '5x8"',
-    available: false,
-    date: '2017-01-01',
-  },
-];
+// const miscWatercolor: Artwork[] = [
+//   // 2022 and earlier
+//   {
+//     images: ['/nc/2022-6-18.jpg'],
+//     title: 'The red tree again',
+//     medium: 'watercolor on paper',
+//     dimensions: '4x6"',
+//     available: false,
+//     date: '2022-06-18',
+//   },
+//   {
+//     images: ['/nc/2022-6-17.jpg'],
+//     title: 'The red tree',
+//     medium: 'watercolor on paper',
+//     dimensions: '4x6"',
+//     available: false,
+//     date: '2022-06-17',
+//   },
+//   {
+//     images: ['/paros-greece/2022-2-church.jpg'],
+//     title: 'Church',
+//     medium: 'watercolor on paper',
+//     dimensions: '9x12"',
+//     available: false,
+//     date: '2022-02-01',
+//   },
+//   {
+//     images: ['/nc/2020-6-29-rosemary-field.jpg'],
+//     title: "Rosemary's farm",
+//     medium: 'watercolor on paper',
+//     dimensions: '5.5x12"',
+//     available: false,
+//     date: '2020-06-29',
+//   },
+//   {
+//     images: ['/nc/2020-5-jlo.jpg'],
+//     title: 'North Carolina home',
+//     medium: 'watercolor on paper',
+//     dimensions: '4x6"',
+//     available: false,
+//     date: '2020-05-01',
+//   },
+//   {
+//     images: ['/nc/2020-4-18-barn.jpg'],
+//     title: "Rosemary's barn",
+//     medium: 'watercolor on paper',
+//     dimensions: '5x8"',
+//     available: false,
+//     date: '2020-04-18',
+//   },
+//   {
+//     images: ['/canada/2017-canada-sketch.jpg'],
+//     title: 'The Big House',
+//     medium: 'watercolor on paper',
+//     dimensions: '5x8"',
+//     available: false,
+//     date: '2017-01-01',
+//   },
+// ];
 
-const iPad: Artwork[] = [
-  {
-    image: '/nyc/2023-01-05.JPG',
-    title: 'Mood, 2023',
-    medium: 'iPad',
-    dimensions: '10x10"',
-    available: true, // prints
-    date: '2023-01-05',
-    notes:
-      'Signed prints available. Printed on 100% cotton fine art paper. $240',
-  },
-  {
-    image: '/nyc/2022-11-08-tree.jpg',
-    title: 'The colors, 2022',
-    medium: 'iPad',
-    dimensions: '12x12", 16x16"',
-    available: true, // prints
-    date: '2022-11-08',
-    notes:
-      'Signed prints available. 12x12" for $60, 16x16" for $100. Printed on 100% cotton fine art paper',
-  },
-  {
-    image: '/nyc/2022-10-27-brooklyn-grange.JPG',
-    title: 'Brooklyn Grange rooftop, 2022',
-    medium: 'iPad',
-    dimensions: '12x8"',
-    available: true, // prints
-    date: '2022-10-27',
-    notes:
-      'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
-  },
-  {
-    image: '/paros-greece/2022-2-9-bowl.png',
-    title: 'Untitled, 2022',
-    medium: 'iPad',
-    available: false,
-    date: '2022-02-09',
-    notes:
-      'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
-  },
-  {
-    image: '/nc/2021-12-27.png',
-    title: "Mom and dad's back yard, 2021",
-    medium: 'iPad',
-    available: false,
-    date: '2021-12-27',
-  },
-  {
-    image: '/canada/2021-11-17-canada.jpg',
-    title: 'Untitled, 2021',
-    medium: 'iPad',
-    available: false,
-    date: '2021-11-17',
-  },
-  {
-    image: '/canada/2021-11-17-canada.jpg',
-    title: 'Untitled, 2021',
-    medium: 'iPad',
-    available: false,
-    date: '2021-11-17',
-  },
-  {
-    image: '/marcias-ranch/2021-11-15-Holly.jpg',
-    title: 'Hollyhocks, 2021',
-    medium: 'iPad',
-    available: false,
-    date: '2021-11-15',
-  },
-];
+// const iPad: Artwork[] = [
+//   {
+//     images: ['/nyc/2023-01-05.JPG'],
+//     title: 'Mood, 2023',
+//     medium: 'iPad',
+//     dimensions: '10x10"',
+//     available: true, // prints
+//     date: '2023-01-05',
+//     notes:
+//       'Signed prints available. Printed on 100% cotton fine art paper. $240',
+//   },
+//   {
+//     images: ['/nyc/2022-11-08-tree.jpg'],
+//     title: 'The colors, 2022',
+//     medium: 'iPad',
+//     dimensions: '12x12", 16x16"',
+//     available: true, // prints
+//     date: '2022-11-08',
+//     notes:
+//       'Signed prints available. 12x12" for $60, 16x16" for $100. Printed on 100% cotton fine art paper',
+//   },
+//   {
+//     images: ['/nyc/2022-10-27-brooklyn-grange.JPG'],
+//     title: 'Brooklyn Grange rooftop, 2022',
+//     medium: 'iPad',
+//     dimensions: '12x8"',
+//     available: true, // prints
+//     date: '2022-10-27',
+//     notes:
+//       'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
+//   },
+//   {
+//     images: ['/paros-greece/2022-2-9-bowl.png'],
+//     title: 'Untitled, 2022',
+//     medium: 'iPad',
+//     available: false,
+//     date: '2022-02-09',
+//     notes:
+//       'Signed prints available. 12x8" for $50. Printed on 100% cotton fine art paper',
+//   },
+//   {
+//     images: ['/nc/2021-12-27.png'],
+//     title: "Mom and dad's back yard, 2021",
+//     medium: 'iPad',
+//     available: false,
+//     date: '2021-12-27',
+//   },
+//   {
+//     images: ['/canada/2021-11-17-canada.jpg'],
+//     title: 'Untitled, 2021',
+//     medium: 'iPad',
+//     available: false,
+//     date: '2021-11-17',
+//   },
+//   {
+//     images: ['/canada/2021-11-17-canada.jpg'],
+//     title: 'Untitled, 2021',
+//     medium: 'iPad',
+//     available: false,
+//     date: '2021-11-17',
+//   },
+//   {
+//     images: ['/marcias-ranch/2021-11-15-Holly.jpg'],
+//     title: 'Hollyhocks, 2021',
+//     medium: 'iPad',
+//     available: false,
+//     date: '2021-11-15',
+//   },
+// ];
 
 type HomepageArtwork = Artwork & {
   project: ProjectNamesEnum;
@@ -1455,7 +1515,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2025-04-05',
     dimensions: '8x10"',
-    image: '/mokuhanga/2025-04-05-cat-flower.jpg',
+    images: ['/mokuhanga/2025-04-05-cat-flower.jpg'],
     medium: 'watercolor on Rives BFK cream',
     title: 'Miso being bad',
     project: ProjectNamesEnum.MOKUHANGA,
@@ -1464,7 +1524,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2025-04-05',
     dimensions: '8x10"',
-    image: '/mokuhanga/2025-04-05-xena.jpg',
+    images: ['/mokuhanga/2025-04-05-xena.jpg'],
     medium: 'watercolor on Rives BFK cream',
     title: 'Xena the seal',
     project: ProjectNamesEnum.MOKUHANGA,
@@ -1473,14 +1533,14 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: false,
     date: '2025-04-05',
     dimensions: '8x10"',
-    image: '/mokuhanga/2025-04-05-chickens.jpg',
+    images: ['/mokuhanga/2025-04-05-chickens.jpg'],
     medium: 'watercolor on Rives BFK cream',
     title: 'Chickens',
     project: ProjectNamesEnum.MOKUHANGA,
   },
   {
     date: '2023-09-11',
-    image: '/nyc/2023-09-11.jpg',
+    images: ['/nyc/2023-09-11.jpg'],
     medium: 'gouache on carton board',
     title: 'Figs and bar tools',
     dimensions: '6x8"',
@@ -1489,7 +1549,7 @@ export const homepageArtworks: HomepageArtwork[] = [
   },
   {
     date: '2023-09-10',
-    image: '/nyc/2023-09-10.jpg',
+    images: ['/nyc/2023-09-10.jpg'],
     title: 'First time here',
     medium: 'gouache on carton board',
     dimensions: '6x8"',
@@ -1498,7 +1558,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     project: ProjectNamesEnum.WORKS_ON_CARDBOARD,
   },
   {
-    image: '/nyc/2023-11-26.jpg',
+    images: ['/nyc/2023-11-26.jpg'],
     title: 'Golden light',
     medium: 'oil on canvas',
     dimensions: '40x26"',
@@ -1507,7 +1567,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     project: ProjectNamesEnum.CAFE_SERIES,
   },
   {
-    image: '/nyc/2024-02-08.jpeg',
+    images: ['/nyc/2024-02-08.jpeg'],
     title: 'Untitled',
     medium: 'oil on cardboard',
     dimensions: '10x10"',
@@ -1520,7 +1580,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2024-06-01',
     dimensions: '8x5"',
-    image: '/2024-animal-world/24-deer-in-thicket.jpg',
+    images: ['/2024-animal-world/24-deer-in-thicket.jpg'],
     medium: 'pen and whiteout paper',
     title: 'Deer in thicket',
     project: ProjectNamesEnum.ANIMAL_WORLD_2024,
@@ -1529,7 +1589,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2024-06-01',
     dimensions: '12x6.5"',
-    image: '/2024-animal-world/bear.jpg',
+    images: ['/2024-animal-world/bear.jpg'],
     medium: 'pen on paper',
     title: 'The wise bear',
     project: ProjectNamesEnum.ANIMAL_WORLD_2024,
@@ -1538,7 +1598,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2024-06-01',
     dimensions: '8x11"',
-    image: '/2024-animal-world/community.jpg',
+    images: ['/2024-animal-world/community.jpg'],
     medium: 'pen on paper',
     title: 'The infinite and the specific / Community',
     project: ProjectNamesEnum.ANIMAL_WORLD_2024,
@@ -1547,7 +1607,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2024-06-01',
     dimensions: '6.5x9"',
-    image: '/2024-animal-world/ghosts.jpg',
+    images: ['/2024-animal-world/ghosts.jpg'],
     medium: 'pen and whiteout on paper',
     title: 'Ghosts',
     project: ProjectNamesEnum.ANIMAL_WORLD_2024,
@@ -1556,7 +1616,7 @@ export const homepageArtworks: HomepageArtwork[] = [
     available: true,
     date: '2024-06-01',
     dimensions: '13x6"',
-    image: '/2024-animal-world/hidden-bear.jpg',
+    images: ['/2024-animal-world/hidden-bear.jpg'],
     medium: 'pen and whiteout on paper',
     title: 'Hidden bear',
     project: ProjectNamesEnum.ANIMAL_WORLD_2024,

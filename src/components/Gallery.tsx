@@ -21,7 +21,7 @@ export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
               );
             }}
           >
-            <img src={artwork.image} alt={artwork.title} />
+            <img src={artwork.images[0]} alt={artwork.title} />
           </div>
         ))}
       </div>

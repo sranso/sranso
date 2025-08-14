@@ -29,11 +29,14 @@ export function Artwork() {
       <main className='flex-1 p-6 md:ml-64 h-full'>
         <div className='flex md:flex-row flex-col gap-4 justify-between h-full'>
           <div className='max-h-[40rem] grow'>
-            <img
-              src={artwork.image}
-              alt={artwork.title}
-              className='mb-4 max-w-11/12 mx-auto max-h-full'
-            />
+            {artwork.images.map((image) => (
+              <img
+                key={image}
+                src={image}
+                alt={artwork.title}
+                className='mb-4 max-w-11/12 mx-auto max-h-full'
+              />
+            ))}
           </div>
           <div className='min-w-36 md:mt-8 shrink-0 mr-6 text-wrap max-w-60'>
             <p className='italic'>{artwork.title}</p>
