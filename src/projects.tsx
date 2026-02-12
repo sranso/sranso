@@ -6,8 +6,10 @@ export const enum ProjectNamesEnum {
 
   // done
   ANIMAL_WORLD_2024 = '2024-animal-world',
+  BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   CLOTHING = 'clothing',
   GSHI_2022 = '2022-gshi',
+  ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
   INTERIORS_2023 = '2023-interiors',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   MOKUHANGA = '2025-mokuhanga',
@@ -15,9 +17,7 @@ export const enum ProjectNamesEnum {
   OAXACA_2022 = '2022-oaxaca',
   PAROS_2022 = '2022-paros',
   PAROS_2025 = '2025-paros',
-  BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   PETS = 'pets',
-  ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
 }
 
 const roseSeries: Artwork[] = [
@@ -911,6 +911,22 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
 
   [ProjectNamesEnum.PETS]: [
+    {
+      images: ['/paros-greece/2025-09-charlie.JPG'],
+      title: 'Charlie',
+      medium: 'oil on canvas',
+      dimensions: '8x6"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-sama.jpeg'],
+      title: 'Sama',
+      medium: 'pen and ink on toned paper',
+      dimensions: '5x7"',
+      available: false,
+      date: '2025-09-01',
+    },
     {
       images: ['/pets/25-Lainey.jpg'],
       title: 'Lainey',
