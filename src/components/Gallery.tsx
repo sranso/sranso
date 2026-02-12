@@ -32,17 +32,24 @@ export const Gallery = ({ artworks }: { artworks: Artwork[] }) => {
   const singleArtwork = artworks[0];
   if (singleArtwork) {
     return (
-      <div className='p-4 max-h-full' onClick={() => {
-        navigate(
-          getArtworkPath(
-            singleArtwork,
-            'project' in singleArtwork
-              ? (singleArtwork.project as ProjectNamesEnum)
-              : undefined
-          )
-        );
-      }}>
-        <img src={singleArtwork.images[0]} alt={singleArtwork.title} />
+      <div
+        className='flex items-center justify-center p-4 h-[calc(100dvh-3rem)] max-h-[calc(100dvh-3rem)] min-h-0 overflow-hidden cursor-pointer'
+        onClick={() => {
+          navigate(
+            getArtworkPath(
+              singleArtwork,
+              'project' in singleArtwork
+                ? (singleArtwork.project as ProjectNamesEnum)
+                : undefined
+            )
+          );
+        }}
+      >
+        <img
+          src={singleArtwork.images[0]}
+          alt={singleArtwork.title}
+          className='max-h-full max-w-full object-contain'
+        />
       </div>
     );
   }
