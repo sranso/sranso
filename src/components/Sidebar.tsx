@@ -17,10 +17,10 @@ export const Sidebar = () => {
       <nav className='space-y-1'>
         <p className='font-medium'>Projects</p>
         <a
-          href={`/project/${ProjectNamesEnum.CLOTHING}`}
+          href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}
           className='block hover:underline'
         >
-          Painted clothing
+          2025 Treboul
         </a>
         <a
           href={`/project/${ProjectNamesEnum.PAROS_2025}`}
@@ -33,6 +33,12 @@ export const Sidebar = () => {
           className='block hover:underline'
         >
           2025 Mokuhanga
+        </a>
+        <a
+          href={`/project/${ProjectNamesEnum.CLOTHING}`}
+          className='block hover:underline'
+        >
+          Painted clothing
         </a>
         <a
           href={`/project/${ProjectNamesEnum.CAFE_SERIES}`}

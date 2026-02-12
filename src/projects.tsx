@@ -18,6 +18,7 @@ export const enum ProjectNamesEnum {
   PAROS_2022 = '2022-paros',
   PAROS_2025 = '2025-paros',
   PETS = 'pets',
+  TREBOUL_2025 = '2025-treboul',
 }
 
 const roseSeries: Artwork[] = [
@@ -117,6 +118,14 @@ export type Artwork = {
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
+  [ProjectNamesEnum.TREBOUL_2025]: {
+    title: '2025 Treboul',
+    description: (
+      <p>
+        My husband is from Brittany, France. Over Christmas I bundled up in his brother's suit meant for working in freezers and took my painting supplies on the road.
+      </p>
+    ),
+  },
   [ProjectNamesEnum.PAROS_2025]: {
     title: '2025 Paros',
     description: (
@@ -341,6 +350,48 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 };
 
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
+  [ProjectNamesEnum.TREBOUL_2025]: [
+    {
+      images: ['/treboul/2025-12-23-coulinec.jpg'],
+      title: 'Coulinec',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2025-12-23',
+    },
+    {
+      images: ['/treboul/2025-12-24-saint-jean.jpg'],
+      title: 'Saint Jean',
+      medium: 'oil on board',
+      dimensions: '10x8"',
+      available: true,
+      date: '2025-12-24',
+    },
+    {
+      images: ['/treboul/2025-12-29-neighbors-house.jpg'],
+      title: 'Neighbor\'s house',
+      medium: 'oil on board',
+      dimensions: '10x8"',
+      available: true,
+      date: '2025-12-29',
+    },
+    {
+      images: ['/treboul/2025-12-pors-poulhan.jpg'],
+      title: 'Pors Poulhan',
+      medium: 'oil on cardboard',
+      dimensions: '10x19.5"',
+      available: true,
+      date: '2025-12-23',
+    },
+    {
+      images: ['/treboul/2025-12-pors-poulhan-town.jpg'],
+      title: 'Pors Poulhan town',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2025-12-23',
+    },
+  ],
   [ProjectNamesEnum.PAROS_2025]: [
     {
       images: ['/paros-greece/2025-09-By_the_goats_Oil_7x10.jpg'],
