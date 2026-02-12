@@ -174,7 +174,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         class.
         <br />
         <br />
-        This is the beginning of experimenting with the technique, stay tuned.
+        This is the beginning of experimenting with the technique, and they are all monotypes.
       </p>
     ),
   },
@@ -540,6 +540,70 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   ],
 
   [ProjectNamesEnum.MOKUHANGA]: [
+    {
+      available: true,
+      date: '2025-10-18',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-10-18-cats-still.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Cats, still life',
+    },
+    {
+      available: true,
+      date: '2025-10-22',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-10-22-3.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Cats, negative space',
+    },
+    {
+      available: true,
+      date: '2025-10-22',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-10-22-cats-still.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Cats, still life',
+    },
+    {
+      available: true,
+      date: '2025-11-02',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-11-02-1.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Cats, chaos / one with the fruit',
+    },
+    {
+      available: true,
+      date: '2025-11-02',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-11-02-2.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Still life, patterned',
+    },
+    {
+      available: true,
+      date: '2025-11-02',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-11-02-3.jpg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Still life, night',
+    },
+    {
+      available: true,
+      date: '2025-08-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-still-1.jpeg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Still life',
+    },
+    {
+      available: true,
+      date: '2025-08-05',
+      dimensions: '8x10"',
+      images: ['/mokuhanga/2025-still-3.jpeg'],
+      medium: 'watercolor on Rives BFK cream',
+      title: 'Still life, gleam',
+    },
     {
       available: true,
       date: '2025-04-05',
