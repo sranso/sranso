@@ -23,6 +23,12 @@ export const Sidebar = () => {
           Painted clothing
         </a>
         <a
+          href={`/project/${ProjectNamesEnum.PAROS_2025}`}
+          className='block hover:underline'
+        >
+          2025 Paros
+        </a>
+        <a
           href={`/project/${ProjectNamesEnum.MOKUHANGA}`}
           className='block hover:underline'
         >

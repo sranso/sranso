@@ -14,6 +14,7 @@ export const enum ProjectNamesEnum {
   MT_GRETNA_2023 = '2023-mt-gretna',
   OAXACA_2022 = '2022-oaxaca',
   PAROS_2022 = '2022-paros',
+  PAROS_2025 = '2025-paros',
   BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   PETS = 'pets',
   ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
@@ -116,6 +117,14 @@ export type Artwork = {
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
+  [ProjectNamesEnum.PAROS_2025]: {
+    title: '2025 Paros',
+    description: (
+      <p>
+        My husband and I met in Paros, and a year after our wedding we returned for two weeks. We stayed with friends on the north side of the island, and once a day I sat outside with the animals and the landscape to paint.
+      </p>
+    ),
+  },
   [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: {
     title: 'Illustrations & Cartoons',
   },
@@ -332,6 +341,80 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 };
 
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
+  [ProjectNamesEnum.PAROS_2025]: [
+    {
+      images: ['/paros-greece/2025-09-By_the_goats_Oil_7x10.jpg'],
+      title: 'By the goats',
+      medium: 'oil on canvas',
+      dimensions: '7x10"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-Chickens_Oil_8x6.jpg'],
+      title: 'Chickens',
+      medium: 'oil on canvas',
+      dimensions: '8x6"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-Flying_birds_Oil_8x10.jpg'],
+      title: 'Flying birds',
+      medium: 'oil on canvas',
+      dimensions: '8x10"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-Goats_Oil_10x8.jpg'],
+      title: 'Goats',
+      medium: 'oil on canvas',
+      dimensions: '10x8"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-Shimmering_sea_Oil_7x5.jpg'],
+      title: 'Shimmering sea',
+      medium: 'oil on canvas',
+      dimensions: '7x5"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-charlie.JPG'],
+      title: 'Charlie',
+      medium: 'oil on canvas',
+      dimensions: '8x6"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-ferry.jpeg'],
+      title: 'Ferry',
+      medium: 'pen and ink on toned paper',
+      dimensions: '5x7"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-naousa.jpeg'],
+      title: 'Naousa',
+      medium: 'pen and ink on toned paper',
+      dimensions: '5x7"',
+      available: false,
+      date: '2025-09-01',
+    },
+    {
+      images: ['/paros-greece/2025-09-sama.jpeg'],
+      title: 'Sama',
+      medium: 'pen and ink on toned paper',
+      dimensions: '5x7"',
+      available: false,
+      date: '2025-09-01',
+    },
+  ],
   [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: [
     {
       images: ['/illustrations/2024-book-rats.jpg'],
