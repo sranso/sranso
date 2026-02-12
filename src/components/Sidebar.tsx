@@ -35,10 +35,10 @@ export const Sidebar = () => {
           2025 Mokuhanga
         </a>
         <a
-          href={`/project/${ProjectNamesEnum.CLOTHING}`}
+          href={`/project/${ProjectNamesEnum.CLOTHING_2025}`}
           className='block hover:underline'
         >
-          Painted clothing
+          2025 Painted clothing
         </a>
         <a
           href={`/project/${ProjectNamesEnum.CAFE_SERIES}`}

@@ -7,7 +7,7 @@ export const enum ProjectNamesEnum {
   // done
   ANIMAL_WORLD_2024 = '2024-animal-world',
   BIRDS_OF_NY_2023 = '2023-birds-of-ny',
-  CLOTHING = 'clothing',
+  CLOTHING_2025 = '2025-clothing',
   GSHI_2022 = '2022-gshi',
   ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
   INTERIORS_2023 = '2023-interiors',
@@ -137,7 +137,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: {
     title: 'Illustrations & Cartoons',
   },
-  [ProjectNamesEnum.CLOTHING]: {
+  [ProjectNamesEnum.CLOTHING_2025]: {
     title: 'Painted clothing',
     description: (
       <p>
@@ -1503,7 +1503,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
   ],
 
-  [ProjectNamesEnum.CLOTHING]: [
+  [ProjectNamesEnum.CLOTHING_2025]: [
     {
       images: [
         '/clothing/2025-shorts-front.jpeg',
