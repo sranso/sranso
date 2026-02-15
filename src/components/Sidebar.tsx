@@ -15,19 +15,28 @@ export const Sidebar = () => {
       </div>
 
       <nav className='space-y-1'>
-        <p className='font-medium'>Projects</p>
+        <p className='font-medium text-gray-600 text-xs'>Projects</p>
         <a
           href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}
           className='block hover:underline'
         >
           2025 Treboul
         </a>
-        <a
-          href={`/project/${ProjectNamesEnum.PAROS_2025}`}
-          className='block hover:underline'
-        >
-          2025 Paros
-        </a>
+        <div className='flex flex-col gap-1'>
+          <p >Paros</p>
+          <a
+            href={`/project/${ProjectNamesEnum.PAROS_2025}`}
+            className='block hover:underline ml-2'
+            >
+            2025
+          </a>
+          <a
+            href={`/project/${ProjectNamesEnum.PAROS_2022}`}
+            className='block hover:underline ml-2'
+          >
+            2022
+          </a>
+        </div>
         <a
           href={`/project/${ProjectNamesEnum.MOKUHANGA}`}
           className='block hover:underline'
@@ -89,12 +98,6 @@ export const Sidebar = () => {
           2022 Oaxaca
         </a>
         <a
-          href={`/project/${ProjectNamesEnum.PAROS_2022}`}
-          className='block hover:underline'
-        >
-          2022 Paros
-        </a>
-        <a
           href={`/project/${ProjectNamesEnum.MARCIAS_RANCH_2020}`}
           className='block hover:underline'
         >
@@ -114,7 +117,7 @@ export const Sidebar = () => {
         </a>
 
         <div className='bg-gray-600 w-full h-px my-2'></div>
-        <p className='font-medium'>Silly sites</p>
+        <p className='font-medium text-gray-600 text-xs'>Silly sites</p>
         {/* <a className='block hover:underline' href='/art/cartoons'>
           The New Yorker
         </a> */}

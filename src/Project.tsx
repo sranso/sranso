@@ -3,7 +3,7 @@ import { Artworks, ProjectNamesEnum, Projects } from './projects';
 import { Gallery } from './components/Gallery';
 
 export function Project() {
-  const { projectName } = useParams<{ projectName: string }>();
+  const { projectName } = useParams<{ projectName: ProjectNamesEnum }>();
   const project = Projects[projectName as ProjectNamesEnum];
   const artworks = Artworks[projectName as ProjectNamesEnum];
 
