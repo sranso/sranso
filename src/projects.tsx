@@ -5,6 +5,7 @@ export const enum ProjectNamesEnum {
   WORKS_ON_CARDBOARD = 'works-on-cardboard',
 
   // done
+  IN_PROGRESS = 'in-progress',
   ANIMAL_WORLD_2024 = '2024-animal-world',
   BIRDS_OF_NY_2023 = '2023-birds-of-ny',
   CLOTHING_2025 = '2025-clothing',
@@ -118,6 +119,14 @@ export type Artwork = {
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
+  [ProjectNamesEnum.IN_PROGRESS]: {
+    title: 'In progress',
+    description: (
+      <p>
+      This is a peek into what I am working on. My focus lately has been on 1. self portraits with a limited palette, and 2. landscapes that I start from life and finish in the studio.
+      </p>
+    ),
+  },
   [ProjectNamesEnum.TREBOUL_2025]: {
     title: '2025 Treboul',
     description: (
@@ -350,13 +359,87 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 };
 
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
+  [ProjectNamesEnum.IN_PROGRESS]: [
+    {
+      images: ['/in-progress/2026-05-01-balcony.jpg'],
+      title: 'Balcony',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-05-01',
+    },
+    {
+      images: ['/in-progress/2026-05-01-goats.jpg'],
+      title: 'Goats',
+      medium: 'oil on board',
+      dimensions: '9x8"',
+      available: true,
+      date: '2026-05-01',
+    },
+    {
+      images: ['/in-progress/2026-05-01-self-p.jpg'],
+      title: 'Self portrait',
+      medium: 'oil on board',
+      dimensions: '8x8"',
+      available: true,
+      date: '2026-05-01',
+    },
+    {
+      images: ['/in-progress/2026-05-01-tree.jpg'],
+      title: 'Tree',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-05-01',
+    },
+    {
+      images: ['/in-progress/2026-04-01-self-p-bra.jpg'],
+      title: 'Self portrait, bra',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-04-01',
+    },
+    {
+      images: ['/in-progress/2026-04-01-self-p-flowers.jpg'],
+      title: 'Self portrait with flowers',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-04-01',
+    },
+    {
+      images: ['/in-progress/2026-04-01-self-p-n.jpg'],
+      title: 'Self portrait, N',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-04-01',
+    },
+    {
+      images: ['/in-progress/2026-04-01-self-p.jpg'],
+      title: 'Self portrait',
+      medium: 'oil on board',
+      dimensions: '12x9"',
+      available: true,
+      date: '2026-04-01',
+    },
+    {
+      images: ['/in-progress/2026-03-xena-miso.jpg'],
+      title: 'Xena and Miso',
+      medium: 'oil on board',
+      dimensions: '6x12"',
+      available: true,
+      date: '2026-03-01',
+    },
+  ],
   [ProjectNamesEnum.TREBOUL_2025]: [
     {
       images: ['/treboul/2025-12-23-coulinec.jpg'],
       title: 'Coulinec',
       medium: 'oil on board',
       dimensions: '8x10"',
-      available: true,
+      available: false,
       date: '2025-12-23',
     },
     {
@@ -409,6 +492,14 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
     },
   ],
   [ProjectNamesEnum.PAROS_2025]: [
+    {
+      images: ['/paros-greece/2025-paros-sunset.jpg'],
+      title: 'Sunset',
+      medium: 'oil on paper',
+      dimensions: '9x12"',
+      available: false,
+      date: '2025-09-01',
+    },
     {
       images: ['/paros-greece/2025-09-By_the_goats_Oil_7x10.jpg'],
       title: 'By the goats',
