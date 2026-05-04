@@ -1,0 +1,32 @@
+src/components/Sidebar.tsx
+  h_06d156ebd81324 20-24
+src/projects.tsx
+  h_06d156ebd81324 8,122-129,367,375,383,391,399,407,415,423,431,442
+  3bd2e38756d494e5 362-366,368-374,376-382,384-390,392-398,400-406,408-414,416-422,424-430,432-435
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "5faf9164e8418868e0cbb1c17857d71b6328f215",
+  "prompts": {
+    "3bd2e38756d494e5": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "78a02cb8-5a69-4120-aa3c-a34be93929ef",
+        "model": "default"
+      },
+      "human_author": "Sarah Ransohoff",
+      "messages": [],
+      "total_additions": 75,
+      "total_deletions": 2,
+      "accepted_lines": 65,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/dfb720c94ea422a0108d17e3d09b505750c8bd1ce9d6aa0be16b62eab7b1a654"
+    }
+  },
+  "humans": {
+    "h_06d156ebd81324": {
+      "author": "Sarah Ransohoff"
+    }
+  }
+}
