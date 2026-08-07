@@ -16,12 +16,21 @@ export const Sidebar = () => {
 
       <nav className='space-y-1'>
         <p className='font-medium text-gray-600 text-xs'>Projects</p>
-        <a
-          href={`/project/${ProjectNamesEnum.MAINE_2026}`}
-          className='block hover:underline'
-        >
-          2026 Maine
-        </a>
+        <div className='flex flex-col gap-1'>
+          <p >Great Spruce Head Island</p>
+          <a
+            href={`/project/${ProjectNamesEnum.GSHI_2026}`}
+            className='block hover:underline ml-2'
+            >
+            2026
+          </a>
+          <a
+            href={`/project/${ProjectNamesEnum.GSHI_2022}`}
+            className='block hover:underline ml-2'
+          >
+            2022
+          </a>
+        </div>
         <a
           href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}
           className='block hover:underline'

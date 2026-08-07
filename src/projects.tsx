@@ -12,7 +12,7 @@ export const enum ProjectNamesEnum {
   GSHI_2022 = '2022-gshi',
   ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
   INTERIORS_2023 = '2023-interiors',
-  MAINE_2026 = '2026-maine',
+  GSHI_2026 = '2026-gshi',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   MOKUHANGA = '2025-mokuhanga',
   MT_GRETNA_2023 = '2023-mt-gretna',
@@ -129,7 +129,7 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
       </p>
     ),
   },
-  [ProjectNamesEnum.MAINE_2026]: {
+  [ProjectNamesEnum.GSHI_2026]: {
     title: '2026 Maine',
     description: (
       <p>
@@ -446,7 +446,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2026-03-01',
     },
   ],
-  [ProjectNamesEnum.MAINE_2026]: [
+  [ProjectNamesEnum.GSHI_2026]: [
     {
       images: ['/maine/2026-almost-touching-i.jpg'],
       title: 'Almost touching I',
@@ -2072,7 +2072,7 @@ export const homepageArtworks: HomepageArtwork[] = [
       available: true,
       date: '2026-01-01',
       purchaseLink: 'https://buy.stripe.com/bJeeV6e2n1r12be3UXaAw00',
-      project: ProjectNamesEnum.MAINE_2026,
+      project: ProjectNamesEnum.GSHI_2026,
     },
     {
       images: ['/maine/2026-almost-touching-ii.jpg'],
@@ -2082,6 +2082,6 @@ export const homepageArtworks: HomepageArtwork[] = [
       available: true,
       date: '2026-01-01',
       purchaseLink: 'https://buy.stripe.com/3cI14g6zVc5FaHKcrtaAw01',
-      project: ProjectNamesEnum.MAINE_2026,
+      project: ProjectNamesEnum.GSHI_2026,
     },
 ];
