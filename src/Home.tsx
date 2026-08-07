@@ -4,7 +4,7 @@ import { homepageArtworks } from './projects';
 export function Home() {
   return (
     <main className='flex-1 p-6 md:ml-64'>
-      <Gallery artworks={homepageArtworks} />
+      <Gallery artworks={homepageArtworks} layout='centered' />
     </main>
   );
 }

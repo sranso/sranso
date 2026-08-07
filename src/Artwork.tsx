@@ -63,15 +63,25 @@ export function Artwork() {
             {artwork.cost && (
               <p className='text-gray-700'>Cost: ${artwork.cost}</p>
             )}
-            {artwork.available && (
-              <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href='mailto:sranso@gmail.com'
-              >
-                Email to purchase
-              </a>
-            )}
+            {artwork.available &&
+              (artwork.purchaseLink ? (
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href={artwork.purchaseLink}
+                  className='text-blue-500 underline'
+                >
+                  Buy
+                </a>
+              ) : (
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='mailto:sranso@gmail.com'
+                >
+                  Email to purchase
+                </a>
+              ))}
             {artwork.description && (
               <p className='mt-3 text-sm text-gray-700'>
                 {artwork.description}

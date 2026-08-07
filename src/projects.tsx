@@ -117,6 +117,7 @@ export type Artwork = {
   notes?: string;
   title: string;
   cost?: number;
+  purchaseLink?: string;
 };
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
@@ -453,6 +454,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '8.5x10.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/bJeeV6e2n1r12be3UXaAw00',
     },
     {
       images: ['/maine/2026-almost-touching-ii.jpg'],
@@ -461,6 +463,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '8.5x10.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/3cI14g6zVc5FaHKcrtaAw01',
     },
     {
       images: ['/maine/2926-curtain.jpg'],
@@ -469,6 +472,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10x8"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/7sY8wI9M72v57vy8bdaAw02',
     },
     {
       images: ['/maine/2026-father-tree.jpg'],
@@ -477,6 +481,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/eVq4gs0bx0mX4jm0ILaAw03',
     },
     {
       images: ['/maine/2026-daughter-tree.jpg'],
@@ -485,6 +490,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/7sY4gse2nedN8zC3UXaAw0e',
     },
     {
       images: ['/maine/2026-in-the-distance.jpg'],
@@ -493,6 +499,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10x8"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/5kQ5kwgav0mXaHK2QTaAw0d',
     },
     {
       images: ['/maine/2026-in-the-moss.jpg'],
@@ -501,6 +508,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/3cI5kwgav3z9g24ezBaAw0c',
     },
     {
       images: ['/maine/2026-next-we-swim.jpg'],
@@ -509,6 +517,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '7.5x10"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/9B6bIU2jF3z96ruajlaAw0b',
     },
     {
       images: ['/maine/2026-still-here.jpg'],
@@ -517,6 +526,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '8x10"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/8x29AM6zV4Dd0363UXaAw09',
     },
     {
       images: ['/maine/2026-prepping-for-the-sail.jpg'],
@@ -525,6 +535,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '8x10"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/8x2aEQ8I3edN5nq9fhaAw0a',
     },
     {
       images: ['/maine/2026-twin-beach-i.jpg'],
@@ -533,6 +544,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '7.75x10"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/6oU28kaQbd9JaHK779aAw06',
     },
     {
       images: ['/maine/2026-twin-beach-ii.jpg'],
@@ -541,6 +553,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '8.5x10.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/14A14g2jF8Tt8zC8bdaAw05',
     },
     {
       images: ['/maine/2026-two-paths-a-rock.jpg'],
@@ -549,6 +562,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/eVqbIUbUfd9JbLO4Z1aAw04',
     },
     {
       images: ['/maine/2026-tree-again-ii.jpg'],
@@ -557,6 +571,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/7sY3co3nJ7Pp5nq779aAw08',
     },
     {
       images: ['/maine/2026-tree-again-iii.jpg'],
@@ -565,6 +580,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '10.5x8.5"',
       available: true,
       date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/cNi7sE1fB3z98zCgHJaAw07',
     },
   ],
   [ProjectNamesEnum.TREBOUL_2025]: [
@@ -2048,13 +2064,24 @@ type HomepageArtwork = Artwork & {
   project: ProjectNamesEnum;
 };
 export const homepageArtworks: HomepageArtwork[] = [
-  {
-      images: ['/treboul/2025-12-pors-poulhan.jpg'],
-      title: 'Pors Poulhan',
-      medium: 'oil on cardboard',
-      dimensions: '10x19.5"',
+    {
+      images: ['/maine/2026-almost-touching-i.jpg'],
+      title: 'Almost touching I',
+      medium: 'oil monotype on vellum',
+      dimensions: '8.5x10.5"',
       available: true,
-      date: '2025-12-23',
-      project: ProjectNamesEnum.TREBOUL_2025,
-  },
+      date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/bJeeV6e2n1r12be3UXaAw00',
+      project: ProjectNamesEnum.MAINE_2026,
+    },
+    {
+      images: ['/maine/2026-almost-touching-ii.jpg'],
+      title: 'Almost touching II',
+      medium: 'oil monotype on vellum',
+      dimensions: '8.5x10.5"',
+      available: true,
+      date: '2026-01-01',
+      purchaseLink: 'https://buy.stripe.com/3cI14g6zVc5FaHKcrtaAw01',
+      project: ProjectNamesEnum.MAINE_2026,
+    },
 ];
