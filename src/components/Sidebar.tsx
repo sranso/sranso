@@ -17,10 +17,10 @@ export const Sidebar = () => {
       <nav className='space-y-1'>
         <p className='font-medium text-gray-600 text-xs'>Projects</p>
         <a
-          href={`/project/${ProjectNamesEnum.IN_PROGRESS}`}
+          href={`/project/${ProjectNamesEnum.MAINE_2026}`}
           className='block hover:underline'
         >
-          In progress
+          2026 Maine
         </a>
         <a
           href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}

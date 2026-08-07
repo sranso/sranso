@@ -7,10 +7,10 @@ export function About() {
         <div className='flex flex-col gap-y-2'>
           <h2 className='text-md font-bold'>Artist statement</h2>
           <p>
-            Practice and enlightenment are one phenomenon – when we are present
-            to the work, we can make art. I am drawn to intimate and quiet
-            subject matter found in nature, in people I care about, in animals.
-            I owe much of my growth as an artist to working alongside others.
+          I am drawn to intimate and quiet subject matter found in nature, in people I care about, in animals. I owe much of my growth as an artist to working alongside others.
+          <br/>
+          <br/>
+          I make art because I enjoy making and learning, and because I know it is a puzzle that will forever intrigue me. The different shades of art making -- whether it's improv (performed on a house team in NYC for a few years), sewing, mokuhanga, oil painting, watercolor, ink -- can change quite a bit for me.
           </p>
         </div>
 

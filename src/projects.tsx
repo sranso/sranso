@@ -12,6 +12,7 @@ export const enum ProjectNamesEnum {
   GSHI_2022 = '2022-gshi',
   ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
   INTERIORS_2023 = '2023-interiors',
+  MAINE_2026 = '2026-maine',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   MOKUHANGA = '2025-mokuhanga',
   MT_GRETNA_2023 = '2023-mt-gretna',
@@ -124,6 +125,17 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
     description: (
       <p>
       This is a peek into what I am working on. My focus lately has been on 1. self portraits with a limited palette, and 2. landscapes that I start from life and finish in the studio.
+      </p>
+    ),
+  },
+  [ProjectNamesEnum.MAINE_2026]: {
+    title: '2026 Maine',
+    description: (
+      <p>
+        I was lucky enough to be able to return to Great Spruce Head Island in July 2026. For a week, five other artists and I spent the time painting and enjoying each other's company. It was magic, summer camps for adults, outside of time and space.
+        <br/>
+        <br/>
+        I ended up spending my time doing monotypes. I like the immediacy and the surprise them. They pull me away from description and into a world that feels more like memory and curiosity; they are never exactly what I expect. I worked from life using oil paints, painting onto a sheet of polycarbon and then pressing paper over it using a mokuhanga baren. I learned a lot, and am excited to continue this exploration in the studio.
       </p>
     ),
   },
@@ -431,6 +443,128 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       dimensions: '6x12"',
       available: true,
       date: '2026-03-01',
+    },
+  ],
+  [ProjectNamesEnum.MAINE_2026]: [
+    {
+      images: ['/maine/2026-almost-touching-i.jpg'],
+      title: 'Almost touching I',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-almost-touching-ii.jpg'],
+      title: 'Almost touching II',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2926-curtain.jpg'],
+      title: 'Curtain',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-daughter-tree.jpg'],
+      title: 'Daughter tree',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-father-tree.jpg'],
+      title: 'Father tree',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-in-the-distance.jpg'],
+      title: 'In the distance',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-in-the-moss.jpg'],
+      title: 'In the moss',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-next-we-swim.jpg'],
+      title: 'Next we swim',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-prepping-for-the-sail.jpg'],
+      title: 'Prepping for the sail',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-still-here.jpg'],
+      title: 'Still here',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-tree-again-ii.jpg'],
+      title: 'Tree again II',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-tree-again-iii.jpg'],
+      title: 'Tree again III',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-twin-beach-i.jpg'],
+      title: 'Twin beach I',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-twin-beach-ii.jpg'],
+      title: 'Twin beach II',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
+    },
+    {
+      images: ['/maine/2026-two-paths-a-rock.jpg'],
+      title: 'Two paths, a rock',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      date: '2026-01-01',
     },
   ],
   [ProjectNamesEnum.TREBOUL_2025]: [
