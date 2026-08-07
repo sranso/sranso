@@ -1,0 +1,31 @@
+src/projects.tsx
+  h_e05c901b5a18cc 120,457,466,475,484,493,502,511,520,529,538,547,556,565,574,583,2068-2071,2073-2085
+  h_e05c901b5a18cc 2067,2086
+src/components/Gallery.tsx
+  s_3bd2e38756d494::t_aa836187080336 4-10,12-43,52,66
+src/Artwork.tsx
+  s_3bd2e38756d494::t_1bb792bff29e74 66-84
+src/Home.tsx
+  s_3bd2e38756d494::t_dbc55446bb7625 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9e0aadd2563585ad796dc5a843f284a512b84270",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  },
+  "sessions": {
+    "s_3bd2e38756d494": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "78a02cb8-5a69-4120-aa3c-a34be93929ef",
+        "model": "default"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
