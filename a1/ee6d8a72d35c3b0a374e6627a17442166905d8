@@ -1,0 +1,32 @@
+src/components/Sidebar.tsx
+  s_3bd2e38756d494::t_bb7c5415fc76a9 35,38,42-47,61
+  h_e05c901b5a18cc 20,41,65
+  h_e05c901b5a18cc 62-64,66
+src/projects.tsx
+  h_e05c901b5a18cc 460-462,464,469-471,473,478-480,482,488,490,495-496,499,504-506,508,664,673,681,690,699,708,715,719,724,728,733,737,742,746,749-758
+  s_3bd2e38756d494::t_41106c654040b1 712-714,716-718,720-723,725-727,729-732,734-736,738-741,743-745,747-748,759
+  s_3bd2e38756d494::t_8b4c6d1f738582 16,23
+  s_3bd2e38756d494::t_9e72d53e298b24 457-459,463,465-468,472,474-477,481,483-487,489,491-494,497-498,500-503,507,509-511
+  s_3bd2e38756d494::t_235ee66b9f1161 153-155,164-166
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a1ee6d8a72d35c3b0a374e6627a17442166905d8",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  },
+  "sessions": {
+    "s_3bd2e38756d494": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "78a02cb8-5a69-4120-aa3c-a34be93929ef",
+        "model": "default"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
