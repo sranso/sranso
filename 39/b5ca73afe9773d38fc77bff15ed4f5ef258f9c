@@ -1,0 +1,19 @@
+src/components/Sidebar.tsx
+  s_3bd2e38756d494::t_87826238c820c3 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "39b5ca73afe9773d38fc77bff15ed4f5ef258f9c",
+  "prompts": {},
+  "sessions": {
+    "s_3bd2e38756d494": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "78a02cb8-5a69-4120-aa3c-a34be93929ef",
+        "model": "default"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
