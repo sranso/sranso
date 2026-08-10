@@ -1,0 +1,28 @@
+index.html
+  s_3bd2e38756d494::t_22ec9407bfcc46 8-34
+src/Artwork.tsx
+  s_3bd2e38756d494::t_1173c0defa159a 1,11,15-22
+  s_3bd2e38756d494::t_c9a9f9b46e335c 23-24
+scripts/generate-og-pages.ts
+  s_3bd2e38756d494::t_5b6a19c4c26d3a 64-66
+  s_3bd2e38756d494::t_8fdfe79901a06e 8-15
+  s_3bd2e38756d494::t_2215ed67e3677a 1-7,16-63,67-123
+package.json
+  s_3bd2e38756d494::t_95afdf1f3ba480 10,12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "58b3d21c48796d0f8897c595158598def57a48d4",
+  "prompts": {},
+  "sessions": {
+    "s_3bd2e38756d494": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "78a02cb8-5a69-4120-aa3c-a34be93929ef",
+        "model": "default"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
