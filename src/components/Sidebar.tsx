@@ -17,7 +17,7 @@ export const Sidebar = () => {
       <nav className='space-y-1'>
         <p className='font-medium text-gray-600 text-xs'>Projects</p>
         <div className='flex flex-col gap-1'>
-          <p >Great Spruce Head Island</p>
+          <p >Great Spruce Head Island, ME</p>
           <a
             href={`/project/${ProjectNamesEnum.GSHI_2026}`}
             className='block hover:underline ml-2'
@@ -32,13 +32,19 @@ export const Sidebar = () => {
           </a>
         </div>
         <a
-          href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}
+          href={`/project/${ProjectNamesEnum.IBIZA_2026}`}
           className='block hover:underline'
         >
-          2025 Treboul
+          2026 Ibiza
         </a>
         <div className='flex flex-col gap-1'>
-          <p >Paros</p>
+          <p>Paros, Greece</p>
+          <a
+            href={`/project/${ProjectNamesEnum.PAROS_2026}`}
+            className='block hover:underline ml-2'
+            >
+            2026
+          </a>
           <a
             href={`/project/${ProjectNamesEnum.PAROS_2025}`}
             className='block hover:underline ml-2'
@@ -52,6 +58,12 @@ export const Sidebar = () => {
             2022
           </a>
         </div>
+        <a
+          href={`/project/${ProjectNamesEnum.TREBOUL_2025}`}
+          className='block hover:underline'
+        >
+          2025 Treboul, France
+        </a>
         <a
           href={`/project/${ProjectNamesEnum.MOKUHANGA}`}
           className='block hover:underline'
@@ -99,12 +111,6 @@ export const Sidebar = () => {
           className='block hover:underline'
         >
           2023 Birds of NY
-        </a>
-        <a
-          href={`/project/${ProjectNamesEnum.GSHI_2022}`}
-          className='block hover:underline'
-        >
-          2022 Great Spruce Head Island
         </a>
         <a
           href={`/project/${ProjectNamesEnum.OAXACA_2022}`}

@@ -13,12 +13,14 @@ export const enum ProjectNamesEnum {
   ILLUSTRATIONS_AND_CARTOONS = 'illustrations-and-cartoons',
   INTERIORS_2023 = '2023-interiors',
   GSHI_2026 = '2026-gshi',
+  IBIZA_2026 = '2026-ibiza',
   MARCIAS_RANCH_2020 = '2020-marcias-ranch',
   MOKUHANGA = '2025-mokuhanga',
   MT_GRETNA_2023 = '2023-mt-gretna',
   OAXACA_2022 = '2022-oaxaca',
   PAROS_2022 = '2022-paros',
   PAROS_2025 = '2025-paros',
+  PAROS_2026 = '2026-paros',
   PETS = 'pets',
   TREBOUL_2025 = '2025-treboul',
 }
@@ -148,6 +150,9 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
       </p>
     ),
   },
+  [ProjectNamesEnum.PAROS_2026]: {
+    title: '2026 Paros',
+  },
   [ProjectNamesEnum.PAROS_2025]: {
     title: '2025 Paros',
     description: (
@@ -155,6 +160,9 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
         My husband and I met in Paros, and a year after our wedding we returned for two weeks. We stayed with friends on the north side of the island, and once a day I sat outside with the animals and the landscape to paint.
       </p>
     ),
+  },
+  [ProjectNamesEnum.IBIZA_2026]: {
+    title: '2026 Ibiza',
   },
   [ProjectNamesEnum.ILLUSTRATIONS_AND_CARTOONS]: {
     title: 'Illustrations & Cartoons',
@@ -446,6 +454,61 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       date: '2026-03-01',
     },
   ],
+  [ProjectNamesEnum.IBIZA_2026]: [
+    {
+      images: ['/ibiza/2026-06-05-people-on-beach.jpg'],
+      title: 'Ibiza beach people',
+      medium: 'watercolor and gouache on brown paper',
+      dimensions: '12x9"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/eVqbIU6zV4Ddg24gHJaAw0g',
+      date: '2026-06-05',
+    },
+    {
+      images: ['/ibiza/2026-06-05-umbrella.jpg'],
+      title: 'Ibiza umbrella',
+      medium: 'watercolor and gouache on brown paper',
+      dimensions: '12x9"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/cNi14g4rNedN17afDFaAw0h',
+      date: '2026-06-05',
+    },
+    {
+      images: ['/ibiza/2026-beach-wc.JPG'],
+      title: 'Ibiza beach',
+      medium: 'watercolor and gouache on brown paper',
+      dimensions: '10x8"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/aFa9AMe2n0mXbLO0ILaAw0i',
+      date: '2026-06-01',
+    },
+    {
+      images: ['/ibiza/2026-pool-people.jpg'],
+      title: 'Pool people',
+      medium: 'watercolor on paper',
+      dimensions: '8x10"',
+      available: false,
+      date: '2026-06-01',
+    },
+    {
+      images: ['/ibiza/2026-rock.jpg'],
+      title: 'Ibiza rock',
+      medium: 'watercolor and gouache on vellum',
+      dimensions: '8x10"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/28E14gaQbedN036gHJaAw0j',
+      date: '2026-06-01',
+    },
+    {
+      images: ['/ibiza/2026-trees.JPG'],
+      title: 'Ibiza landscape',
+      medium: 'watercolor and gouache on brown paper',
+      dimensions: '12x9"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/6oUbIU2jF6Llg244Z1aAw0f',
+      date: '2026-06-01',
+    },
+  ],
   [ProjectNamesEnum.GSHI_2026]: [
     {
       images: ['/maine/2026-almost-touching-i.jpg'],
@@ -598,6 +661,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'oil on board',
       dimensions: '10x8"',
       available: true,
+      purchaseLink: 'https://buy.stripe.com/7sYaEQ9M7edNbLOdvxaAw0t',
       date: '2025-12-24',
     },
     {
@@ -606,6 +670,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'oil on board',
       dimensions: '12x9"',
       available: true,
+      purchaseLink: 'https://buy.stripe.com/4gMbIU5vRglVg248bdaAw0s',
       date: '2025-12-29',
     },
     {
@@ -613,7 +678,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'Pors Poulhan',
       medium: 'oil on cardboard',
       dimensions: '10x19.5"',
-      available: true,
+      available: false,
       date: '2025-12-23',
     },
     {
@@ -622,6 +687,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'oil on board',
       dimensions: '10x8"',
       available: true,
+      purchaseLink: 'https://buy.stripe.com/9B614g2jF1r19DGbnpaAw0q',
       date: '2025-12-23',
     },
     {
@@ -630,6 +696,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'oil on board',
       dimensions: '12x9"',
       available: true,
+      purchaseLink: 'https://buy.stripe.com/bJebIU3nJ3z93fiajlaAw0p',
       date: '2025-12-23',
     },
     {
@@ -638,8 +705,57 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       medium: 'oil on board',
       dimensions: '11x14"',
       available: true,
+      purchaseLink: 'https://buy.stripe.com/4gMbIU4rN9XxaHK0ILaAw0r',
       date: '2025-12-23',
     },
+  ],
+  [ProjectNamesEnum.PAROS_2026]: [
+    {
+      images: ['/paros-greece/2026-bright-spot.jpg'],
+      title: 'A yellow glow',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/14A9AM8I39XxdTW9fhaAw0o',
+      date: '2026-01-01',
+    },
+    {
+      images: ['/paros-greece/2026-greece-stormy-sea.jpg'],
+      title: 'Stormy, brilliant sea',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/7sYdR27DZfhR8zC3UXaAw0l',
+      date: '2026-01-01',
+    },
+    {
+      images: ['/paros-greece/2026-kat.jpg'],
+      title: 'Caring for the goats',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/14A6oAe2n6Ll4jm779aAw0n',
+      date: '2026-01-01',
+    },
+    {
+      images: ['/paros-greece/2026-tree.jpg'],
+      title: 'Olive tree',
+      medium: 'oil on board',
+      dimensions: '8x10"',
+      available: true,
+      purchaseLink: 'https://buy.stripe.com/00w14g9M78Tt17a9fhaAw0k',
+      date: '2026-01-01',
+    },
+    // {
+    // goat painting
+    //   images: ['/paros-greece/2026-tree.jpg'],
+    //   title: 'Watching the sun fall',
+    //   medium: 'oil on cardboard',
+    //   dimensions: '8x10"',
+    //   available: true,
+    //   purchaseLink: 'https://buy.stripe.com/7sYdR27DZfhR8zC3UXaAw0l',
+    //   date: '2026-01-01',
+    // },
   ],
   [ProjectNamesEnum.PAROS_2025]: [
     {
