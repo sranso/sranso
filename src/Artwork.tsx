@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Artworks, getArtworkPath, ProjectNamesEnum } from './projects';
 
@@ -6,18 +7,21 @@ export function Artwork() {
     projectName: string;
     artwork: string;
   }>();
-  if (!artworkParam)
-    return (
-      <main className='flex-1 p-6 md:ml-64'>
-        <div>Artwork not found.</div>
-      </main>
-    );
   const artworks = Artworks[projectName as ProjectNamesEnum];
-  const artwork = artworks.find(
+  const artwork = artworks?.find(
     (artwork) => getArtworkPath(artwork) === artworkParam
   );
 
-  if (!artwork)
+  useEffect(() => {
+    if (!artwork) return;
+    const previous = document.title;
+    document.title = `${artwork.title} – Sarah Ransohoff`;
+    return () => {
+      document.title = previous;
+    };
+  }, [artwork]);
+
+  if (!artworkParam || !artwork)
     return (
       <main className='flex-1 p-6 md:ml-64'>
         <div>Artwork not found.</div>
