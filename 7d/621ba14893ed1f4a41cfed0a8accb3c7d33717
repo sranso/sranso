@@ -1,0 +1,18 @@
+src/components/Sidebar.tsx
+  h_e05c901b5a18cc 6
+src/projects.tsx
+  h_e05c901b5a18cc 535,544,553,562,571,580,598,607,634,643,2197
+src/About.tsx
+  h_e05c901b5a18cc 10,12,14-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7d621ba14893ed1f4a41cfed0a8accb3c7d33717",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
