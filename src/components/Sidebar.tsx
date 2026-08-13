@@ -3,15 +3,10 @@ import { ProjectNamesEnum } from '../projects';
 export const Sidebar = () => {
   return (
     <aside className='w-full md:w-64 p-6 md:fixed md:h-screen md:overflow-y-auto md:border-r border-gray-300 text-sm leading-relaxed'>
-      <div className='mb-8'>
+      <div className='mb-7'>
         <a href='/' className='logo font-bold'>
           Sarah Ransohoff
         </a>
-
-        <p>
-          Drawings, paintings, illustrations, & things that make me smile or
-          laugh or feel strongly.
-        </p>
       </div>
 
       <nav className='space-y-1'>
