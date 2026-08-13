@@ -11,8 +11,14 @@ export const Sidebar = () => {
 
       <nav className='space-y-1'>
         <p className='font-medium text-gray-600 text-xs'>Projects</p>
+        <a
+          href={`/project/${ProjectNamesEnum.IN_PROGRESS}`}
+          className='block hover:underline'
+        >
+          2026 Current work
+        </a>
         <div className='flex flex-col gap-1'>
-          <p >Great Spruce Head Island, ME</p>
+          <p >Great Spruce Head Island</p>
           <a
             href={`/project/${ProjectNamesEnum.GSHI_2026}`}
             className='block hover:underline ml-2'
