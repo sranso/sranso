@@ -1,0 +1,14 @@
+src/projects.tsx
+  h_e05c901b5a18cc 712,730,738-739
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "3896276c5d8491c1fb8c977594e4b0295473e839",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
