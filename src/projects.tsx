@@ -710,8 +710,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'A yellow glow',
       medium: 'oil on board',
       dimensions: '12x9"',
-      available: true,
-      purchaseLink: 'https://buy.stripe.com/14A9AM8I39XxdTW9fhaAw0o',
+      available: false,
       date: '2026-01-01',
     },
     {
@@ -719,8 +718,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'Stormy, brilliant sea',
       medium: 'oil on board',
       dimensions: '8x10"',
-      available: true,
-      purchaseLink: 'https://buy.stripe.com/7sYdR27DZfhR8zC3UXaAw0l',
+      available: false,
       date: '2026-01-01',
     },
     {
@@ -728,8 +726,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'Caring for the goats',
       medium: 'oil on board',
       dimensions: '12x9"',
-      available: true,
-      purchaseLink: 'https://buy.stripe.com/14A6oAe2n6Ll4jm779aAw0n',
+      available: false,
       date: '2026-01-01',
     },
     {
@@ -737,8 +734,7 @@ export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
       title: 'Olive tree',
       medium: 'oil on watercolor paper',
       dimensions: '12x9"',
-      available: true,
-      purchaseLink: 'https://buy.stripe.com/00w14g9M78Tt17a9fhaAw0k',
+      available: false,
       date: '2026-01-01',
     },
     // {
