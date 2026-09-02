@@ -124,10 +124,10 @@ export type Artwork = {
 
 export const Projects: Record<ProjectNamesEnum, Project> = {
   [ProjectNamesEnum.IN_PROGRESS]: {
-    title: 'In progress',
+    title: 'Currently',
     description: (
       <p>
-      This is a peek into what I am working on. My focus lately has been on 1. self portraits with a limited palette, and 2. landscapes that I start from life and finish in the studio.
+      This is a peek into what I am working on. My focus lately has been on self portraits with a limited palette and continuing the exploration of monotypes.
       </p>
     ),
   },
@@ -381,6 +381,15 @@ export const Projects: Record<ProjectNamesEnum, Project> = {
 
 export const Artworks: Record<ProjectNamesEnum, Artwork[]> = {
   [ProjectNamesEnum.IN_PROGRESS]: [
+    {
+      images: ['/in-progress/2026-08-self-p-monotype.jpg'],
+      title: 'Self portrait, monotype',
+      medium: 'oil monotype on Japanese paper',
+      dimensions: '10x10"',
+      available: true,
+      // purchaseLink: 'https://buy.stripe.com/fZu4gs7DZ3z96rudvxaAw0w',
+      date: '2026-08-28',
+    },
     {
       images: ['/in-progress/2026-fairy-rock-bathers.jpg'],
       title: 'Fairy rock bathers I',
